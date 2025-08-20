@@ -70,6 +70,8 @@
   "UNEMPLOYED_HOUSEWIFE_DOMESTIC_WORK": "Unemployed, Housewife or Domestic Work",
   "SURVEYS": {
     "SURVEYS": "Surveys",
+        "CLOSES_ON": "Closes on",
+
     "ACTIVE_SURVEYS": "Active Surveys",
     "PREVIOUS_SURVEYS": "Previous Surveys",
     "VILLAGES": "Villages",
