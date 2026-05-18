@@ -57,27 +57,27 @@ const RoleCard: React.FC<RoleCardProps> = ({
       <CardActionArea
         disableRipple={!onClick}
         sx={{
-          p: { xs: 3, md: 4 },
+          p: { xs: 2, md: 2.5 },
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           textAlign: 'center',
-          gap: 1.5,
+          gap: 1,
           '&:hover .MuiCardActionArea-focusHighlight': { opacity: 0 },
         }}
       >
         <Box
           sx={{
-            width: 56,
-            height: 56,
+            width: 44,
+            height: 44,
             borderRadius: '50%',
             backgroundColor: theme.iconBackground,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            mb: 1,
+            mb: 0.5,
             color: theme.iconColor,
-            fontSize: 28,
+            fontSize: 22,
           }}
         >
           {icon}
@@ -88,8 +88,8 @@ const RoleCard: React.FC<RoleCardProps> = ({
           sx={{
             fontFamily: 'Poppins',
             fontWeight: 700,
-            fontSize: '18px',
-            lineHeight: '26px',
+            fontSize: '15px',
+            lineHeight: '22px',
             color: '#1F1B13',
           }}
         >
@@ -101,8 +101,8 @@ const RoleCard: React.FC<RoleCardProps> = ({
           sx={{
             fontFamily: 'Poppins',
             fontWeight: 400,
-            fontSize: '14px',
-            lineHeight: '22px',
+            fontSize: '12px',
+            lineHeight: '18px',
             color: '#5C5952',
           }}
         >

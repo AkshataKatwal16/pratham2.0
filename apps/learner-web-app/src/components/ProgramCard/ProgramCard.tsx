@@ -46,7 +46,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
         }}
         sx={{
           width: '100%',
-          height: 220,
+          height: 160,
           objectFit: 'cover',
           display: 'block',
         }}
@@ -58,8 +58,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           flexGrow: 1,
           display: 'flex',
           flexDirection: 'column',
-          gap: 1.5,
-          p: 2.5,
+          gap: 1,
+          p: 1.5,
         }}
       >
         <Typography
@@ -67,8 +67,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           sx={{
             fontFamily: 'Poppins',
             fontWeight: 700,
-            fontSize: '16px',
-            lineHeight: '24px',
+            fontSize: '14px',
+            lineHeight: '20px',
             color: '#1F1B13',
           }}
         >
@@ -106,7 +106,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
             lineHeight: '20px',
             textTransform: 'none',
             borderRadius: '8px',
-            py: 1.2,
+            py: 0.8,
             // '&:hover': {
             //   backgroundColor: buttonColor,
             //   filter: 'brightness(0.9)',
