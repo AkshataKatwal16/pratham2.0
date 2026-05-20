@@ -849,7 +849,7 @@ const LoginPageContent = () => {
         primaryText={t('LANDING.ENROL_NOW') || 'Enrol Now'}
         primaryActionHandler={() => {
           setNotEnrolledModal(false);
-          router.push(`/programs/${notEnrolledTenantId}`);
+          router.push(`/${encodeURIComponent(notEnrolledProgramName)}`);
         }}
         // secondaryText={t('LEARNER_APP.PROGRAMS.MY_PROGRAMS') || 'My Programs'}
         // secondaryActionHandler={() => { setNotEnrolledModal(false); router.push('/programs'); }}

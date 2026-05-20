@@ -41,7 +41,7 @@ export default function ProgramDetailPage() {
   const params = useParams();
   const router = useRouter();
   const { t } = useTranslation();
-  const tenantId = params?.tenantId as string;
+  const programName = decodeURIComponent(params?.programName as string);
 
   const [program, setProgram] = useState<Program | null>(null);
   const [loading, setLoading] = useState(true);
@@ -49,12 +49,14 @@ export default function ProgramDetailPage() {
   const [enrolModalOpen, setEnrolModalOpen] = useState(false);
 
   useEffect(() => {
-    if (!tenantId) return;
+    if (!programName) return;
     const fetchProgram = async () => {
       try {
         const res = await getTenantInfo();
         const all: Program[] = res?.result || [];
-        const found = all.find((p) => p.tenantId === tenantId);
+        const found = all.find(
+          (p) => p.name.toLowerCase() === programName.toLowerCase()
+        );
         if (found) {
           setProgram(found);
         } else {
@@ -67,14 +69,14 @@ export default function ProgramDetailPage() {
       }
     };
     fetchProgram();
-  }, [tenantId]);
+  }, [programName]);
 
   const handleEnrolNow = () => {
     setEnrolModalOpen(true);
   };
 
   const handleLogin = () => {
-    router.push(`/login?tenantId=${tenantId}`);
+    router.push(`/login?tenantId=${program?.tenantId}`);
   };
 
   if (loading) {
@@ -358,7 +360,7 @@ export default function ProgramDetailPage() {
         open={enrolModalOpen}
         onClose={() => setEnrolModalOpen(false)}
         programName={program.name}
-        tenantId={tenantId}
+        tenantId={program.tenantId}
       />
     </>
   );

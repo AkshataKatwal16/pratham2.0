@@ -436,7 +436,7 @@ export default function LandingPage() {
                         title={program.name}
                         description={program.description}
                         buttonColor={PROGRAM_CARD_COLORS[index % PROGRAM_CARD_COLORS.length]}
-                        onExplore={() => router.push(`/programs/${program.tenantId}`)}
+                        onExplore={() => router.push(`/${encodeURIComponent(program.name)}`)}
                       />
                     </Grid>
                   );
@@ -498,7 +498,7 @@ export default function LandingPage() {
                           title={program.name}
                           description={program.description}
                           buttonColor={VOLUNTEER_CARD_COLORS[index % VOLUNTEER_CARD_COLORS.length]}
-                          onExplore={() => router.push(`/programs/${program.tenantId}`)}
+                          onExplore={() => router.push(`/${encodeURIComponent(program.name)}`)}
                         />
                       </Grid>
                     );
