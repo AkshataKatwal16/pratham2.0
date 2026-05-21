@@ -108,11 +108,17 @@ const Header = ({ isShowLogout = false, isLogin = false }) => {
         }}
         style={{ cursor: 'pointer' }}
       >
-        <Image src={appLogo} alt="Pratham Logo" width={200} height={40} />
+        <Image
+          src={appLogo}
+          alt="Pratham Logo"
+          width={200}
+          height={40}
+          style={{ width: 'clamp(100px, 40vw, 200px)', height: 'auto' }}
+        />
       </Box>
 
       {/* Language Selector and Logout */}
-      <Box display="flex" alignItems="center" gap={2}>
+      <Box display="flex" alignItems="center" gap={{ xs: 1, sm: 2 }}>
           {/* Login Button */}
         {isLogin && (
           <Button
@@ -122,13 +128,15 @@ const Header = ({ isShowLogout = false, isLogin = false }) => {
             sx={{
               fontFamily: 'Poppins',
               fontWeight: 600,
-              fontSize: '14px',
+              fontSize: { xs: '12px', sm: '14px' },
               textTransform: 'none',
               backgroundColor: '#FDBE16',
               color: '#1F1B13',
               borderRadius: '8px',
-              px: 2.5,
+              px: { xs: 1.5, sm: 2.5 },
               py: 0.8,
+              whiteSpace: 'nowrap',
+              minWidth: 'unset',
               '&:hover': {
                 backgroundColor: '#f0b000',
               },
@@ -149,8 +157,8 @@ const Header = ({ isShowLogout = false, isLogin = false }) => {
             sx={{
               fontFamily: 'Poppins',
               fontWeight: 400,
-              fontSize: '14px',
-              minWidth: '80px',
+              fontSize: { xs: '12px', sm: '14px' },
+              minWidth: { xs: '60px', sm: '80px' },
             }}
           >
             <MenuItem value="en">English</MenuItem>

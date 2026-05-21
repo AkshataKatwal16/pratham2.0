@@ -359,8 +359,8 @@ export default function LandingPage() {
             >
               {t('LANDING.HOW_WOULD_YOU_LIKE_TO_GET_STARTED')}
             </Typography>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
+            <Grid container spacing={3} justifyContent="center">
+              <Grid item xs={12} sm={5} md={4}>
                 <RoleCard
                   icon={<MenuBookOutlinedIcon fontSize="inherit" />}
                   title={t('LANDING.ARE_YOU_HERE_TO_LEARN')}
@@ -369,7 +369,7 @@ export default function LandingPage() {
                   onClick={handleScrollToLearner}
                 />
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} sm={5} md={4}>
                 <RoleCard
                   icon={<FavoriteBorderIcon fontSize="inherit" />}
                   title={t('LANDING.ARE_YOU_HERE_TO_VOLUNTEER')}
@@ -422,7 +422,7 @@ export default function LandingPage() {
                 <Typography>{t('LANDING.NO_PROGRAMS_AVAILABLE')}</Typography>
               </Box>
             ) : (
-              <Grid container spacing={3}>
+              <Grid container spacing={3} justifyContent="center">
                 {learnerPrograms.map((program, index) => {
                   const imageItem = program.programImages?.[0];
                   const image =
@@ -430,13 +430,13 @@ export default function LandingPage() {
                       ? imageItem
                       : (imageItem as any)?.description || '/images/default.png';
                   return (
-                    <Grid item xs={12} sm={6} md={4} key={program.tenantId || index}>
+                    <Grid item xs={12} sm={6} md={3} key={program.tenantId || index}>
                       <ProgramCard
                         image={image}
                         title={program.name}
                         description={program.description}
                         buttonColor={PROGRAM_CARD_COLORS[index % PROGRAM_CARD_COLORS.length]}
-                        onExplore={() => router.push(`/programs/${program.tenantId}`)}
+                        onExplore={() => router.push(`/${encodeURIComponent(program.name)}`)}
                       />
                     </Grid>
                   );
@@ -484,7 +484,7 @@ export default function LandingPage() {
                   <Typography>{t('LANDING.LOADING_PROGRAMS')}</Typography>
                 </Box>
               ) : (
-                <Grid container spacing={3}>
+                <Grid container spacing={3} justifyContent="center">
                   {volunteerPrograms.map((program, index) => {
                     const imageItem = program.programImages?.[0];
                     const image =
@@ -492,13 +492,13 @@ export default function LandingPage() {
                         ? imageItem
                         : (imageItem as any)?.description || '/images/default.png';
                     return (
-                      <Grid item xs={12} sm={6} md={4} key={program.tenantId || index}>
+                      <Grid item xs={12} sm={6} md={3} key={program.tenantId || index}>
                         <ProgramCard
                           image={image}
                           title={program.name}
                           description={program.description}
                           buttonColor={VOLUNTEER_CARD_COLORS[index % VOLUNTEER_CARD_COLORS.length]}
-                          onExplore={() => router.push(`/programs/${program.tenantId}`)}
+                          onExplore={() => router.push(`/${encodeURIComponent(program.name)}`)}
                         />
                       </Grid>
                     );
