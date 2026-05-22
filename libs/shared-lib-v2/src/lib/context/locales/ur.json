@@ -158,8 +158,7 @@
       "completed": "Completed",
       "in_progress": "In Progress",
       "enrolled_not_started": "Enrolled, not started",
-      "not_started": "Not Started",
-      "tracking_sync_pending": "Tracking Sync Pending"
+      "not_started": "Not Started"
     },
     "CHANGE_USER": "Change User",
     "FETCH_USER": "Fetch User",
