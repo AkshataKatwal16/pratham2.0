@@ -5,10 +5,6 @@ import List from '@learner/components/themantic/content/List';
 const title = 'Experimento_India';
 export const metadata = {
   title,
-  // openGraph: {
-  //   title,
-  //   type: 'website',
-  // },
 };
 
 const Page = () => {
