@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 
 import List from '@learner/components/themantic/content/List';
 
-const title = 'Experimento_India';
+const title = 'Experimento India';
 export const metadata = {
   title,
 };
