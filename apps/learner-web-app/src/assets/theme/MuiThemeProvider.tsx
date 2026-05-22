@@ -8,6 +8,7 @@ import { LanguageProvider } from '@shared-lib';
 import FontSizeTheme from '../../context/FontSizeTheme';
 import { SpeechProvider } from '@shared-lib-v2/lib/context/SpeechContext';
 import { ColorInversionProvider } from '../../context/ColorInversionContext';
+import LanguageSelectionPopup from '@learner/components/LanguageSelectionPopup/LanguageSelectionPopup';
 
 // Add module augmentation for custom typography variants
 declare module '@mui/material/styles' {
@@ -397,5 +398,10 @@ export const MuiThemeProviderWithLanguage = ({
 }: {
   children: React.ReactNode;
 }) => {
-  return <LanguageProvider>{children}</LanguageProvider>;
+  return (
+    <LanguageProvider>
+      <LanguageSelectionPopup />
+      {children}
+    </LanguageProvider>
+  );
 };
