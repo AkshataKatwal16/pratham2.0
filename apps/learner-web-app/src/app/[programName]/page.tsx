@@ -13,6 +13,7 @@ import Header from '@learner/components/Header/Header';
 import { getTenantInfo } from '@learner/utils/API/ProgramService';
 import { useTranslation } from '@shared-lib';
 import EnrolModal from '@learner/components/EnrolModal/EnrolModal';
+import DOMPurify from 'dompurify';
 
 interface Program {
   tenantId: string;
@@ -305,7 +306,7 @@ export default function ProgramDetailPage() {
                     '& li': { marginBottom: '2px' },
                   }}
                   dangerouslySetInnerHTML={{
-                    __html: (t(program?.params?.uiConfig?.aboutText) || '').replace(/\n/g, '<br/>')
+                    __html: DOMPurify.sanitize((t(program?.params?.uiConfig?.aboutText) || '').replace(/\n/g, '<br/>'))
                   }}
                 />
               </Box>
