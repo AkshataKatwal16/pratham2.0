@@ -85,7 +85,6 @@ export default function ProgramDetailPage() {
   if (loading) {
     return (
       <>
-        <LanguageSelectionPopup />
         <Header isLogin />
         <Box
           sx={{
@@ -104,7 +103,6 @@ export default function ProgramDetailPage() {
   if (notFound || !program) {
     return (
       <>
-        <LanguageSelectionPopup />
         <Header isLogin />
         <Box
           sx={{
