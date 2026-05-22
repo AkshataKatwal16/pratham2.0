@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
 import {
   Box,
   Dialog,
@@ -15,7 +14,6 @@ import { useTranslation } from '@shared-lib';
 import {
   PLP_LANGUAGE_OPTIONS,
   PLP_LANGUAGE_POPUP_DISMISSED_KEY,
-  isLanguagePopupRoute,
 } from './languageOptions';
 
 export type LanguageSelectionPopupSize = NonNullable<DialogProps['maxWidth']>;
@@ -29,20 +27,15 @@ const LanguageSelectionPopup: React.FC<LanguageSelectionPopupProps> = ({
   size = 'xs',
 }) => {
   const { setLanguage } = useTranslation();
-  const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
-
-    if (!isLanguagePopupRoute(pathname ?? '')) {
-      setOpen(false);
-      return;
-    }
-
     const dismissed = sessionStorage.getItem(PLP_LANGUAGE_POPUP_DISMISSED_KEY);
-    setOpen(!dismissed);
-  }, [pathname]);
+    if (!dismissed) {
+      setOpen(true);
+    }
+  }, []);
 
   const persistLanguage = (code: string) => {
     setLanguage(code);
