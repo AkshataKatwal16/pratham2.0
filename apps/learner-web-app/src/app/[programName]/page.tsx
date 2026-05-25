@@ -43,7 +43,7 @@ export default function ProgramDetailPage() {
   const params = useParams();
   const router = useRouter();
   const { t } = useTranslation();
-  const programName = decodeURIComponent(params?.programName as string);
+  const programName = decodeURIComponent(params?.programName as string).replace(/-/g, ' ');
 
   const [program, setProgram] = useState<Program | null>(null);
   const [loading, setLoading] = useState(true);
@@ -73,11 +73,30 @@ export default function ProgramDetailPage() {
     fetchProgram();
   }, [programName]);
 
+  const PRAGYANPATH_SSO_URL =
+    'https://prathamerp.org/Config/OAuthLogin/PRATHAM?callbackurl=https://dev-plp.prathamdigital.org/sso?env=newton&tenantid=914ca990-9b45-4385-a06b-05054f35d0b9';
+
+  const isPragyanpath = programName.toLowerCase() === 'pragyanpath';
+
+  useEffect(() => {
+    if (isPragyanpath) {
+      window.location.href = PRAGYANPATH_SSO_URL;
+    }
+  }, [isPragyanpath]);
+
   const handleEnrolNow = () => {
+    if (isPragyanpath) {
+      window.location.href = PRAGYANPATH_SSO_URL;
+      return;
+    }
     setEnrolModalOpen(true);
   };
 
   const handleLogin = () => {
+    if (isPragyanpath) {
+      window.location.href = PRAGYANPATH_SSO_URL;
+      return;
+    }
     router.push(`/login?tenantId=${program?.tenantId}`);
   };
 
