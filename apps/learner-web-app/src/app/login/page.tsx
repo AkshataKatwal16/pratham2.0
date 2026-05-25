@@ -386,7 +386,24 @@ const LoginPageContent = () => {
           document.cookie = `token=${token}; path=/; secure; SameSite=Strict`;
           await profileComplitionCheck();
           setLoading(false);
-          router.push(landingPage || '/home');
+           if(localStorage.getItem('isAndroidApp') == 'yes' && window.ReactNativeWebView)
+            {
+             let refreshToken = localStorage.getItem('refreshTokenForAndroid');
+             if (!refreshToken || refreshToken === '') {
+               refreshToken = localStorage.getItem('refreshToken');
+             }
+             window.ReactNativeWebView.postMessage(JSON.stringify({
+               type: 'LOGIN_INTO_ONLY_ONE_PROGRAM_EVENT',
+               data: {
+                 userId: userResponse?.userId,
+                 tenantId: enrolledTenant.tenantId,
+                 token: localStorage.getItem('token'),
+                 refreshToken: refreshToken,
+               }
+             }));
+            }
+            else
+         router.push(landingPage || '/home');
           return;
         } else {
           // User is not enrolled — look up program name then show modal
