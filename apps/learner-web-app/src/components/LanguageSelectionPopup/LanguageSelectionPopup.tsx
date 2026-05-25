@@ -31,6 +31,7 @@ const LanguageSelectionPopup: React.FC<LanguageSelectionPopupProps> = ({
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
+    if (localStorage.getItem('isAndroidApp') === 'yes') return;
     const dismissed = sessionStorage.getItem(PLP_LANGUAGE_POPUP_DISMISSED_KEY);
     if (!dismissed) {
       setOpen(true);
