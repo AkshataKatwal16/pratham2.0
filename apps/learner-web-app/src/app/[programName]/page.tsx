@@ -73,20 +73,42 @@ export default function ProgramDetailPage() {
     fetchProgram();
   }, [programName]);
 
-  const PRAGYANPATH_SSO_URL =
-    'https://prathamerp.org/Config/OAuthLogin/PRATHAM?callbackurl=https://dev-plp.prathamdigital.org/sso?env=newton&tenantid=914ca990-9b45-4385-a06b-05054f35d0b9';
-
   const isPragyanpath = programName.toLowerCase() === 'pragyanpath';
 
-  useEffect(() => {
-    if (isPragyanpath) {
-      window.location.href = PRAGYANPATH_SSO_URL;
+  const handlePragyanpathSSO = () => {
+    if (!program) return;
+    if (program?.params?.uiConfig?.sso?.length > 0) {
+      const ssoOption = program?.params?.uiConfig?.sso?.find((option: any) => {
+        const currentDomain =
+          typeof window !== 'undefined' ? window.location.origin : '';
+        return option?.enable_domain?.includes(currentDomain);
+      });
+
+      if (ssoOption) {
+        if (typeof window !== 'undefined' && window.localStorage) {
+          localStorage.setItem('landingPage', program?.params?.uiConfig?.landingPage);
+          localStorage.setItem('userProgram', program?.name);
+          const uiConfig = program?.params?.uiConfig || {};
+          localStorage.setItem('uiConfig', JSON.stringify(uiConfig));
+        }
+        const currentBaseUrl =
+          typeof window !== 'undefined' ? window.location.origin : '';
+        const callbackUrl = `${currentBaseUrl}/sso?env=newton&tenantid=${program?.tenantId}`;
+        const ssoUrl = `${ssoOption?.url}?callbackurl=${callbackUrl}`;
+        window.location.href = ssoUrl;
+      }
     }
-  }, [isPragyanpath]);
+  };
+
+  useEffect(() => {
+    if (isPragyanpath && program) {
+      handlePragyanpathSSO();
+    }
+  }, [isPragyanpath, program]);
 
   const handleEnrolNow = () => {
     if (isPragyanpath) {
-      window.location.href = PRAGYANPATH_SSO_URL;
+      handlePragyanpathSSO();
       return;
     }
     setEnrolModalOpen(true);
@@ -94,7 +116,7 @@ export default function ProgramDetailPage() {
 
   const handleLogin = () => {
     if (isPragyanpath) {
-      window.location.href = PRAGYANPATH_SSO_URL;
+      handlePragyanpathSSO();
       return;
     }
     router.push(`/login?tenantId=${program?.tenantId}`);
