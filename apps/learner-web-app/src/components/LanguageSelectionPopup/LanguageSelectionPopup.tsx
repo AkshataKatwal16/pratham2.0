@@ -108,7 +108,7 @@ const LanguageSelectionPopup: React.FC<LanguageSelectionPopupProps> = ({
               mb: 1.5,
             }}
           >
-          <LanguageIcon sx={{ color: '#1ba4fb', fontSize: 55 }} />
+          <LanguageIcon sx={{ color: '#FDBE16', fontSize: 55 }} />
           </Box>
           <Typography
             id="language-selection-title"
