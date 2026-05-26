@@ -388,19 +388,20 @@ const LoginPageContent = () => {
           setLoading(false);
            if(localStorage.getItem('isAndroidApp') == 'yes' && window.ReactNativeWebView)
             {
-             let refreshToken = localStorage.getItem('refreshTokenForAndroid');
-             if (!refreshToken || refreshToken === '') {
-               refreshToken = localStorage.getItem('refreshToken');
-             }
-             window.ReactNativeWebView.postMessage(JSON.stringify({
-               type: 'LOGIN_INTO_SELECTED_PROGRAM_EVENT',
-               data: {
-                 userId: userResponse?.userId,
-                 selectedTenantId: enrolledTenant.tenantId,
-                 token: localStorage.getItem('token'),
-                 refreshToken: refreshToken,
-               }
-             }));
+            //  let refreshToken = localStorage.getItem('refreshTokenForAndroid');
+            //  if (!refreshToken || refreshToken === '') {
+            //    refreshToken = localStorage.getItem('refreshToken');
+            //  }
+            //  window.ReactNativeWebView.postMessage(JSON.stringify({
+            //    type: 'LOGIN_INTO_SELECTED_PROGRAM_EVENT',
+            //    data: {
+            //      userId: userResponse?.userId,
+            //      selectedTenantId: enrolledTenant.tenantId,
+            //      token: localStorage.getItem('token'),
+            //      refreshToken: refreshToken,
+            //    }
+            //  }));
+            router.push(`/programs`);
             }
             else
          router.push(landingPage || '/home');
