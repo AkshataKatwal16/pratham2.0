@@ -396,10 +396,10 @@ const LoginPageContent = () => {
                refreshToken = localStorage.getItem('refreshToken');
              }
              window.ReactNativeWebView.postMessage(JSON.stringify({
-               type: 'LOGIN_INTO_ SELECTECTED_PROGRAM_EVENT',
+               type: 'LOGIN_INTO_SELECTED_PROGRAM_EVENT',
                data: {
                  userId: userResponse?.userId,
-                 tenantId: enrolledTenant.tenantId,
+                 selectedTenantId: enrolledTenant.tenantId,
                  token: localStorage.getItem('token'),
                  refreshToken: refreshToken,
                }
