@@ -315,7 +315,6 @@ const App = ({
     const downloadableTypes = [
       'video/mp4',
       'video/webm',
-      'video/x-youtube',
       'application/pdf',
       'application/epub',
       'application/vnd.ekstep.ecml-archive',
