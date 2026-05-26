@@ -80,8 +80,7 @@ const UserRegistrationList = () => {
   const hasLocationFilters =
     Boolean(locationFilters.states?.length) &&
     Boolean(locationFilters.districts?.length) &&
-    Boolean(locationFilters.blocks?.length) &&
-    Boolean(locationFilters.villages?.length);
+    Boolean(locationFilters.blocks?.length);
 
   // Transform API response to match UserCard format
   const parseCallLogEntry = (
@@ -722,9 +721,8 @@ const UserRegistrationList = () => {
         {t('USER_REGISTRATION.LEARNER_REGISTRATIONS')}
       </Typography>
         <Box sx={{   mb: 2, borderRadius: '8px', mt:"20px" }}>
-          <LocationDropdowns 
+          <LocationDropdowns
             onLocationChange={handleLocationChange}
-            initialFilters={locationFilters}
           />
         </Box>
         

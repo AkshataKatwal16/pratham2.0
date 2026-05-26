@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Box, Select, MenuItem, InputLabel, Grid, FormControl } from '@mui/material';
+import { Box, Select, MenuItem, InputLabel, Checkbox, ListItemText, Grid, FormControl } from '@mui/material';
 import { getFieldOptions } from '../../services/MasterDataService';
 import { getCohortData } from '../../services/CohortServices';
 
@@ -15,15 +15,15 @@ interface LocationDropdownsProps {
     states?: number[];
     districts?: number[];
     blocks?: number[];
-    villages?: number[];
+    // villages?: number[];
   }) => void;
 }
 
 type StoredLocationFilters = {
   state?: number | string;
   district?: number | string;
-  block?: number | string;
-  village?: number | string;
+  blocks?: (number | string)[];
+  // village?: number | string;
 };
 
 const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange }) => {
@@ -32,28 +32,28 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
   const [states, setStates] = useState<LocationOption[]>([]);
   const [districts, setDistricts] = useState<LocationOption[]>([]);
   const [blocks, setBlocks] = useState<LocationOption[]>([]);
-  const [villages, setVillages] = useState<LocationOption[]>([]);
+  // const [villages, setVillages] = useState<LocationOption[]>([]);
 
   const [selectedState, setSelectedState] = useState<number | string>('');
   const [selectedDistrict, setSelectedDistrict] = useState<number | string>('');
-  const [selectedBlock, setSelectedBlock] = useState<number | string>('');
-  const [selectedVillage, setSelectedVillage] = useState<number | string>('');
+  const [selectedBlocks, setSelectedBlocks] = useState<(number | string)[]>([]);
+  // const [selectedVillage, setSelectedVillage] = useState<number | string>('');
 
   const [loadingStates, setLoadingStates] = useState(false);
   const [loadingDistricts, setLoadingDistricts] = useState(false);
   const [loadingBlocks, setLoadingBlocks] = useState(false);
-  const [loadingVillages, setLoadingVillages] = useState(false);
+  // const [loadingVillages, setLoadingVillages] = useState(false);
 
   const [userLocationIds, setUserLocationIds] = useState<{
     stateId: number | null;
     districtId: number | null;
     blockId: number | null;
-    villageId: number | null;
+    // villageId: number | null;
   }>({
     stateId: null,
     districtId: null,
     blockId: null,
-    villageId: null,
+    // villageId: null,
   });
 
   const storedLocationRef = useRef<StoredLocationFilters>({});
@@ -61,7 +61,7 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
     states: false,
     districts: false,
     blocks: false,
-    villages: false,
+    // villages: false,
   });
   const [isStoredLocationLoaded, setIsStoredLocationLoaded] = useState(false);
 
@@ -85,6 +85,20 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
     return Number.isNaN(numeric) ? String(item) : numeric;
   };
 
+  const parseStoredArray = (value: unknown): (number | string)[] => {
+    if (!Array.isArray(value)) {
+      const single = parseStoredValue(value);
+      return single !== undefined ? [single] : [];
+    }
+    return value
+      .map((item) => {
+        if (item === null || item === undefined) return undefined;
+        const numeric = Number(item);
+        return Number.isNaN(numeric) ? String(item) : numeric;
+      })
+      .filter((v): v is number | string => v !== undefined);
+  };
+
   const getMatchingOptionValue = (
     options: LocationOption[],
     storedValue?: number | string
@@ -94,6 +108,23 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
       (opt) => opt.value === storedValue || opt.label === storedValue
     );
     return option?.value;
+  };
+
+  const getMatchingOptionValues = (
+    options: LocationOption[],
+    storedValues?: (number | string)[]
+  ): (number | string)[] => {
+    if (!storedValues || storedValues.length === 0) return [];
+    const matched: (number | string)[] = [];
+    storedValues.forEach((storedValue) => {
+      const option = options.find(
+        (opt) => opt.value === storedValue || opt.label === storedValue
+      );
+      if (option && !matched.includes(option.value)) {
+        matched.push(option.value);
+      }
+    });
+    return matched;
   };
 
   // Parse stored location filters from localStorage once on mount
@@ -108,8 +139,8 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
         storedLocationRef.current = {
           state: parseStoredValue(parsed.states ?? parsed.state),
           district: parseStoredValue(parsed.districts ?? parsed.district),
-          block: parseStoredValue(parsed.blocks ?? parsed.block),
-          village: parseStoredValue(parsed.villages ?? parsed.village),
+          blocks: parseStoredArray(parsed.blocks),
+          // village: parseStoredValue(parsed.villages ?? parsed.village),
         };
         setIsStoredLocationLoaded(true);
         return;
@@ -134,8 +165,11 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
       storedLocationRef.current = {
         state: parseCustomFieldSelection(getFieldByLabel('STATE')),
         district: parseCustomFieldSelection(getFieldByLabel('DISTRICT')),
-        block: parseCustomFieldSelection(getFieldByLabel('BLOCK')),
-        village: parseCustomFieldSelection(getFieldByLabel('VILLAGE')),
+        blocks: (() => {
+          const v = parseCustomFieldSelection(getFieldByLabel('BLOCK'));
+          return v !== undefined ? [v] : [];
+        })(),
+        // village: parseCustomFieldSelection(getFieldByLabel('VILLAGE')),
       };
     } catch (error) {
       console.error('Error reading stored location filters:', error);
@@ -152,7 +186,7 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
       stateId: getByLabel('STATE')?.id ?? null,
       districtId: getByLabel('DISTRICT')?.id ?? null,
       blockId: getByLabel('BLOCK')?.id ?? null,
-      villageId: getByLabel('VILLAGE')?.id ?? null,
+      // villageId: getByLabel('VILLAGE')?.id ?? null,
     };
   }
 
@@ -189,6 +223,7 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
     fetchStates();
   }, []);
 
+  // Apply default state selection
   useEffect(() => {
     if (!isStoredLocationLoaded || defaultsAppliedRef.current.states || states.length === 0) {
       return;
@@ -219,13 +254,13 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
         setLoadingDistricts(true);
         setDistricts([]);
         setBlocks([]);
-        setVillages([]);
+        // setVillages([]);
         setSelectedDistrict('');
-        setSelectedBlock('');
-        setSelectedVillage('');
+        setSelectedBlocks([]);
+        // setSelectedVillage('');
         defaultsAppliedRef.current.districts = false;
         defaultsAppliedRef.current.blocks = false;
-        defaultsAppliedRef.current.villages = false;
+        // defaultsAppliedRef.current.villages = false;
         try {
           const response = await getFieldOptions({
             fieldName: 'district',
@@ -250,13 +285,14 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
     } else {
       setDistricts([]);
       setBlocks([]);
-      setVillages([]);
+      // setVillages([]);
       setSelectedDistrict('');
-      setSelectedBlock('');
-      setSelectedVillage('');
+      setSelectedBlocks([]);
+      // setSelectedVillage('');
     }
   }, [selectedState]);
 
+  // Apply default district selection
   useEffect(() => {
     if (!isStoredLocationLoaded || defaultsAppliedRef.current.districts || districts.length === 0) {
       return;
@@ -286,11 +322,11 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
       const fetchBlocks = async () => {
         setLoadingBlocks(true);
         setBlocks([]);
-        setVillages([]);
-        setSelectedBlock('');
-        setSelectedVillage('');
+        // setVillages([]);
+        setSelectedBlocks([]);
+        // setSelectedVillage('');
         defaultsAppliedRef.current.blocks = false;
-        defaultsAppliedRef.current.villages = false;
+        // defaultsAppliedRef.current.villages = false;
         try {
           const response = await getFieldOptions({
             fieldName: 'block',
@@ -314,92 +350,46 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
       fetchBlocks();
     } else {
       setBlocks([]);
-      setVillages([]);
-      setSelectedBlock('');
-      setSelectedVillage('');
+      // setVillages([]);
+      setSelectedBlocks([]);
+      // setSelectedVillage('');
     }
   }, [selectedDistrict]);
 
+  // Apply default block selection
   useEffect(() => {
     if (!isStoredLocationLoaded || defaultsAppliedRef.current.blocks || blocks.length === 0) {
       return;
     }
 
-    const storedMatch = getMatchingOptionValue(blocks, storedLocationRef.current.block);
-    let newSelection: number | string = '';
+    const storedMatches = getMatchingOptionValues(blocks, storedLocationRef.current.blocks);
+    let newSelection: (number | string)[] = [];
 
-    if (storedMatch !== undefined) {
-      newSelection = storedMatch;
+    if (storedMatches.length > 0) {
+      newSelection = storedMatches;
     } else if (userLocationIds.blockId) {
       const matchedBlock = blocks.find((b) => b.value === userLocationIds.blockId);
-      newSelection = matchedBlock ? matchedBlock.value : '';
+      newSelection = matchedBlock ? [matchedBlock.value] : [];
     }
 
-    if (newSelection === '' && blocks[0]) {
-      newSelection = blocks[0].value;
+    if (newSelection.length === 0 && blocks[0]) {
+      newSelection = [blocks[0].value];
     }
 
-    setSelectedBlock(newSelection);
+    setSelectedBlocks(newSelection);
     defaultsAppliedRef.current.blocks = true;
   }, [blocks, isStoredLocationLoaded, userLocationIds.blockId]);
 
-  // Fetch villages when block is selected
-  useEffect(() => {
-    if (selectedBlock !== '') {
-      const fetchVillages = async () => {
-        setLoadingVillages(true);
-        setVillages([]);
-        setSelectedVillage('');
-        defaultsAppliedRef.current.villages = false;
-        try {
-          const response = await getFieldOptions({
-            fieldName: 'village',
-            controllingfieldfk: [selectedBlock],
-            sort: ['village_name', 'asc'],
-          });
-          if (response?.result?.values) {
-            const villageOptions = response.result.values.map((item: any) => ({
-              value: item.value || item.village_id,
-              label: item.label || item.village_name,
-            }));
-            setVillages(villageOptions);
-          }
-        } catch (error) {
-          console.error('Error fetching villages:', error);
-        } finally {
-          setLoadingVillages(false);
-        }
-      };
-
-      fetchVillages();
-    } else {
-      setVillages([]);
-      setSelectedVillage('');
-    }
-  }, [selectedBlock]);
-
-  useEffect(() => {
-    if (!isStoredLocationLoaded || defaultsAppliedRef.current.villages || villages.length === 0) {
-      return;
-    }
-
-    const storedMatch = getMatchingOptionValue(villages, storedLocationRef.current.village);
-    let newSelection: number | string = '';
-
-    if (storedMatch !== undefined) {
-      newSelection = storedMatch;
-    } else if (userLocationIds.villageId) {
-      const matchedVillage = villages.find((v) => v.value === userLocationIds.villageId);
-      newSelection = matchedVillage ? matchedVillage.value : '';
-    }
-
-    if (newSelection === '' && villages[0]) {
-      newSelection = villages[0].value;
-    }
-
-    setSelectedVillage(newSelection);
-    defaultsAppliedRef.current.villages = true;
-  }, [villages, isStoredLocationLoaded, userLocationIds.villageId]);
+  // Commented out: village fetch effect
+  // useEffect(() => {
+  //   if (selectedBlocks.length > 0) {
+  //     const fetchVillages = async () => { ... };
+  //     fetchVillages();
+  //   } else {
+  //     setVillages([]);
+  //     setSelectedVillage('');
+  //   }
+  // }, [selectedBlocks]);
 
   // Notify parent component when location changes
   useEffect(() => {
@@ -407,11 +397,11 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
       onLocationChange({
         states: selectedState !== '' ? [selectedState as number] : undefined,
         districts: selectedDistrict !== '' ? [selectedDistrict as number] : undefined,
-        blocks: selectedBlock !== '' ? [selectedBlock as number] : undefined,
-        villages: selectedVillage !== '' ? [selectedVillage as number] : undefined,
+        blocks: selectedBlocks.length > 0 ? (selectedBlocks as number[]) : undefined,
+        // villages: selectedVillage !== '' ? [selectedVillage as number] : undefined,
       });
     }
-  }, [selectedState, selectedDistrict, selectedBlock, selectedVillage, onLocationChange]);
+  }, [selectedState, selectedDistrict, selectedBlocks, onLocationChange]);
 
   // Persist current location selections so they survive modal close/page reloads
   useEffect(() => {
@@ -419,24 +409,30 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
     const payload: StoredLocationFilters = {
       state: selectedState !== '' ? selectedState : undefined,
       district: selectedDistrict !== '' ? selectedDistrict : undefined,
-      block: selectedBlock !== '' ? selectedBlock : undefined,
-      village: selectedVillage !== '' ? selectedVillage : undefined,
+      blocks: selectedBlocks.length > 0 ? selectedBlocks : undefined,
+      // village: selectedVillage !== '' ? selectedVillage : undefined,
     };
     localStorage.setItem(LOCATION_STORAGE_KEY, JSON.stringify(payload));
-  }, [selectedState, selectedDistrict, selectedBlock, selectedVillage]);
+  }, [selectedState, selectedDistrict, selectedBlocks]);
+
+  const renderBlockValue = (selected: (number | string)[]) => {
+    if (selected.length === 0) return 'Select';
+    if (selected.length === 1) {
+      const option = blocks.find((opt) => opt.value === selected[0]);
+      return option?.label || '';
+    }
+    return `${selected.length} selected`;
+  };
 
   return (
     <Box>
       <Grid container spacing={2}>
-        {/* State Dropdown */}
+        {/* State Dropdown — single select */}
         <Grid item xs={12} sm={6} md={3}>
           <FormControl fullWidth>
             <InputLabel
               id="state-select-label"
-              sx={{
-                fontSize: '12px',
-                color: '#7C766F',
-              }}
+              sx={{ fontSize: '12px', color: '#7C766F' }}
             >
               State
             </InputLabel>
@@ -448,29 +444,21 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
               disabled={loadingStates}
               sx={{
                 borderRadius: '8px',
-                '& .MuiSelect-select': {
-                  py: 1.5,
-                },
+                '& .MuiSelect-select': { py: 1.5 },
               }}
               MenuProps={{
                 PaperProps: {
                   sx: {
                     maxHeight: '300px',
-                    '& .MuiMenuItem-root': {
-                      py: 0.5,
-                    },
+                    '& .MuiMenuItem-root': { py: 0.5 },
                   },
                 },
               }}
             >
               {loadingStates ? (
-                <MenuItem value="" disabled>
-                  Loading states...
-                </MenuItem>
+                <MenuItem value="" disabled>Loading states...</MenuItem>
               ) : states.length === 0 ? (
-                <MenuItem value="" disabled>
-                  No states available
-                </MenuItem>
+                <MenuItem value="" disabled>No states available</MenuItem>
               ) : (
                 states.map((state) => (
                   <MenuItem key={state.value} value={state.value}>
@@ -482,15 +470,12 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
           </FormControl>
         </Grid>
 
-        {/* District Dropdown */}
+        {/* District Dropdown — single select */}
         <Grid item xs={12} sm={6} md={3}>
           <FormControl fullWidth>
             <InputLabel
               id="district-select-label"
-              sx={{
-                fontSize: '12px',
-                color: '#7C766F',
-              }}
+              sx={{ fontSize: '12px', color: '#7C766F' }}
             >
               District
             </InputLabel>
@@ -502,33 +487,23 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
               disabled={selectedState === '' || loadingDistricts}
               sx={{
                 borderRadius: '8px',
-                '& .MuiSelect-select': {
-                  py: 1.5,
-                },
+                '& .MuiSelect-select': { py: 1.5 },
               }}
               MenuProps={{
                 PaperProps: {
                   sx: {
                     maxHeight: '300px',
-                    '& .MuiMenuItem-root': {
-                      py: 0.5,
-                    },
+                    '& .MuiMenuItem-root': { py: 0.5 },
                   },
                 },
               }}
             >
               {loadingDistricts ? (
-                <MenuItem value="" disabled>
-                  Loading districts...
-                </MenuItem>
+                <MenuItem value="" disabled>Loading districts...</MenuItem>
               ) : selectedState === '' ? (
-                <MenuItem value="" disabled>
-                  Select State first
-                </MenuItem>
+                <MenuItem value="" disabled>Select State first</MenuItem>
               ) : districts.length === 0 ? (
-                <MenuItem value="" disabled>
-                  No districts available
-                </MenuItem>
+                <MenuItem value="" disabled>No districts available</MenuItem>
               ) : (
                 districts.map((district) => (
                   <MenuItem key={district.value} value={district.value}>
@@ -540,57 +515,50 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
           </FormControl>
         </Grid>
 
-        {/* Block Dropdown */}
+        {/* Block Dropdown — multiple select */}
         <Grid item xs={12} sm={6} md={3}>
           <FormControl fullWidth>
             <InputLabel
               id="block-select-label"
-              sx={{
-                fontSize: '12px',
-                color: '#7C766F',
-              }}
+              sx={{ fontSize: '12px', color: '#7C766F' }}
             >
               Block
             </InputLabel>
             <Select
               labelId="block-select-label"
               label="Block"
-              value={selectedBlock}
-              onChange={(e) => setSelectedBlock(e.target.value as number | string)}
+              multiple
+              value={selectedBlocks}
+              onChange={(e) => {
+                const value = e.target.value;
+                setSelectedBlocks(typeof value === 'string' ? [] : value as (number | string)[]);
+              }}
               disabled={selectedDistrict === '' || loadingBlocks}
+              renderValue={(selected) => renderBlockValue(selected as (number | string)[])}
               sx={{
                 borderRadius: '8px',
-                '& .MuiSelect-select': {
-                  py: 1.5,
-                },
+                '& .MuiSelect-select': { py: 1.5 },
               }}
               MenuProps={{
                 PaperProps: {
                   sx: {
                     maxHeight: '300px',
-                    '& .MuiMenuItem-root': {
-                      py: 0.5,
-                    },
+                    '& .MuiMenuItem-root': { py: 0.5 },
                   },
                 },
               }}
             >
               {loadingBlocks ? (
-                <MenuItem value="" disabled>
-                  Loading blocks...
-                </MenuItem>
+                <MenuItem value="" disabled>Loading blocks...</MenuItem>
               ) : selectedDistrict === '' ? (
-                <MenuItem value="" disabled>
-                  Select District first
-                </MenuItem>
+                <MenuItem value="" disabled>Select District first</MenuItem>
               ) : blocks.length === 0 ? (
-                <MenuItem value="" disabled>
-                  No blocks available
-                </MenuItem>
+                <MenuItem value="" disabled>No blocks available</MenuItem>
               ) : (
                 blocks.map((block) => (
                   <MenuItem key={block.value} value={block.value}>
-                    {block.label}
+                    <Checkbox checked={selectedBlocks.indexOf(block.value) > -1} />
+                    <ListItemText primary={block.label} />
                   </MenuItem>
                 ))
               )}
@@ -598,16 +566,10 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
           </FormControl>
         </Grid>
 
-        {/* Village Dropdown */}
-        <Grid item xs={12} sm={6} md={3}>
+        {/* Village Dropdown — commented out */}
+        {/* <Grid item xs={12} sm={6} md={3}>
           <FormControl fullWidth>
-            <InputLabel
-              id="village-select-label"
-              sx={{
-                fontSize: '12px',
-                color: '#7C766F',
-              }}
-            >
+            <InputLabel id="village-select-label" sx={{ fontSize: '12px', color: '#7C766F' }}>
               Village
             </InputLabel>
             <Select
@@ -615,46 +577,17 @@ const LocationDropdowns: React.FC<LocationDropdownsProps> = ({ onLocationChange 
               label="Village"
               value={selectedVillage}
               onChange={(e) => setSelectedVillage(e.target.value as number | string)}
-              disabled={selectedBlock === '' || loadingVillages}
-              sx={{
-                borderRadius: '8px',
-                '& .MuiSelect-select': {
-                  py: 1.5,
-                },
-              }}
-              MenuProps={{
-                PaperProps: {
-                  sx: {
-                    maxHeight: '300px',
-                    '& .MuiMenuItem-root': {
-                      py: 0.5,
-                    },
-                  },
-                },
-              }}
+              disabled={selectedBlocks.length === 0 || loadingVillages}
+              sx={{ borderRadius: '8px', '& .MuiSelect-select': { py: 1.5 } }}
             >
-              {loadingVillages ? (
-                <MenuItem value="" disabled>
-                  Loading villages...
+              {villages.map((village) => (
+                <MenuItem key={village.value} value={village.value}>
+                  {village.label}
                 </MenuItem>
-              ) : selectedBlock === '' ? (
-                <MenuItem value="" disabled>
-                  Select Block first
-                </MenuItem>
-              ) : villages.length === 0 ? (
-                <MenuItem value="" disabled>
-                  No villages available
-                </MenuItem>
-              ) : (
-                villages.map((village) => (
-                  <MenuItem key={village.value} value={village.value}>
-                    {village.label}
-                  </MenuItem>
-                ))
-              )}
+              ))}
             </Select>
           </FormControl>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );
