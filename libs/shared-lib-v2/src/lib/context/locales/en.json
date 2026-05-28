@@ -27,7 +27,7 @@
   "SKILLING_CENTER_IMAGE": "Sklling Center Image",
   "INDUSTRY": "Industry",
   "GOOGLE_MAP_LINK": "Google Map Link",
-  "ADDRESS": " Address",
+  "ADDRESS": "Address",
   "DOB": "Date of Birth",
   "SUBJECT": "Subject",
   "SELF_PLACED": "Self Placed",
@@ -147,8 +147,7 @@
     "SUBMIT_YOUR_REQUEST_FOR_ISSUES": "Submit your request and let us assist you with any issues or concerns.",
     "WE_ARE_HERE_TO_HELP": "We’re Here to Help",
     "Job family": "Job family",
-  "Job Family": "Job Family",
-"Group Membership": "Group Membership",
+    "Group Membership": "Group Membership",
     "PSU": "PSU",
     "UNAUTHORIZED": "You are not authorized to access this site",
     "For Children": "For Children",
@@ -222,7 +221,6 @@
       "EXPLORE_ADDITIONAL_RESOURCES": "Explore Additional Resources & Materials",
       "SECOND_CHANCE_REGISTRATION_MESSAGE": "Thank you for registering for the second chance program. Our team will get in touch with you soon. Till then, you can explore the courses available.",
       "PLAYSTORE_DOWNLOAD_MESSAGE": "You can download the app from {playStoreLink} to access your account also.",
-
       "FILTER_BY": "Filter by",
       "CLEAR_FILTER": "Clear Filter",
       "APPLY_FILTER": "Apply Filter",
@@ -253,7 +251,11 @@
       "ACCESS_PROGRAM": "Access Program",
       "ACCESSING_PROGRAM": "Accessing Program...",
       "NO_REGISTERED_PROGRAMS": "You haven't registered for any program.",
-      "NO_PROGRAMS_FOUND": "No programs found."
+      "NO_PROGRAMS_FOUND": "No programs found.",
+      "WELCOME_GIF_ALT": "Welcome GIF",
+      "QR_CODE_ALT": "QR code",
+      "PLAYSTORE_ALT": "Play Store",
+      "YOUTUBE_IFRAME_TITLE": "YouTube video player"
     },
     "LOGIN": {
       "welcome_title": "Welcome to Pratham myLearning!",
@@ -453,16 +455,21 @@
       "OKAY": "Okay",
       "START_EXPLORING": "Start Exploring",
       "START_LEARNING": "Start learning",
-      "START_ASSESSMENT": "Start Assessment",
       "YOU_HAVE_SUCCESSFULLY_SIGNED_UP_FOR": "You have successfully signed up for",
-      "YOU_HAVE_SUCCESSFULLY_SIGNED_UP_FOR_ASSESSMENT": "Your journey towards Class 10 begins here. Let’s start with the Saral Test.",
       "LEARNING_JOURNEY_FIRST_STEP": "Great job! You have taken the first step in your learning journey with Pratham",
+      "START_ASSESSMENT": "Start Assessment",
+      "YOU_HAVE_SUCCESSFULLY_SIGNED_UP_FOR_ASSESSMENT": "Your journey towards Class 10 begins here. Let’s start with the Saral Test.",
       "ASSESSMENT_REQUIRED_MESSAGE": "Answer a few simple questions and move ahead.",
       "ASSESSMENT_UNAVAILABLE_MESSAGE": "The Saral test is currently unavailable in your selected language. We are working on it. Please try again later.",
       "ASSESSMENT_BEFORE_ACCESS_MESSAGE": "Your journey towards Class 10 begins here. Let’s start with the Saral Test.\n\nAnswer a few simple questions and move ahead.",
       "ASSESSMENT_BEFORE_ACCESS_UNAVAILABLE_MESSAGE": "Your journey towards Class 10 begins here. The Saral test is currently unavailable in your selected language. We are working on it. Please try again later.",
       "COME_BACK_LATER": "Please come back later",
       "BACK_TO_PROGRAMS": "Back to Programs"
+    },
+    "PROFILE": {
+      "COMPLETED_COURSES_AND_CERTIFICATES": "Completed Courses & Certificates",
+      "CERTIFICATION_NOT_COMPLETED": "Certification has not been completed yet.",
+      "CERTIFICATION_ID_NOT_FOUND": "Certification Id not found"
     }
   },
   "Login with Newton ERP": "Login with Newton ERP",
@@ -708,7 +715,6 @@
     "DESIGNATION": "Designation",
     "REGULAR": "Regular",
     "REMOTE": "Remote",
-    "HYBRID": "Hybrid",
     "NOTE_THIS_WILL_BE_CENTER_NAME": "Note : This will be center name",
     "STATE": "State",
     "DISTRICT": "District",
@@ -758,14 +764,6 @@
     "HINDI": "हिंदी",
     "MARATHI": "मराठी",
     "URDU": "اردو",
-    "ODIA": "ଓଡ଼ିଆ",
-    "TELUGU": "తెలుగు",
-    "KANNADA": "ಕನ್ನಡ",
-    "TAMIL": "தமிழ்",
-    "GUJARATI": "ગુજરાતી",
-    "BENGALI": "বাংলা",
-    "WHAT_IS_YOUR_PREFERRED_LANGUAGE": "What is your preferred language",
-    
     "DIVORCED/WIDOW": "Divorced/Widow",
     "GRADUATE": "Graduate",
     "POST_GRADUATE": "Post Graduate",
@@ -819,7 +817,6 @@
     "GRADE_11": "Grade 11",
     "GRADE_12": "Grade 12",
     "hamara_gaon": "hamara gaon",
-
     "smile_program": "smile program",
     "pratham_read_india_initiative_rii": "pratham readindia initiative rii",
     "government_partnership": "government partnership",
@@ -832,18 +829,17 @@
     "WHAT_PROGRAM_ARE_YOU_PART_OF": "What Program Are You Part Of",
     "WHAT PROGRAM ARE YOU PART OF": "What Program Are You Part Of",
     "CATCHMENT_AREA": "Catchment Area",
-    "CONSENT_FILE": "Consent File",
     "PROGRAM_PREFERENCES": "Program Preferences",
     "CHOOSE_SUB_PROGRAM": "Choose Sub-Program",
     "POLICY_ACKNOWLEDGEMENTS": "Policy Acknowledgements",
-    "I_HAVE_READ_AND_AGREE": "I acknowledge that I have read and understood the ",
+    "I_HAVE_READ_AND_AGREE": "I acknowledge that I have read and understood the",
     "CHILD_PROTECTION_POLICY": "Child Protection Policy",
     "POCSO_POLICY": "POCSO Policy",
     "NDA_POLICY": "NDA Policy",
     "FRAUD_PROTECTION_POLICY": "Fraud Protection Policy",
-    "AND_TO_MAINTAIN_CONFIDENTIALITY": " and agree to maintain confidentiality.",
-    "AND_TO_COMPLY": " and agree to comply.",
-    "AND": " and ",
+    "AND_TO_MAINTAIN_CONFIDENTIALITY": "and agree to maintain confidentiality.",
+    "AND_TO_COMPLY": "and agree to comply.",
+    "AND": "and",
     "PTM_NAME": "PTM Name",
     "SEARCH_AND_SELECT_PTM": "Search and select PTM",
     "SEARCH": "Search...",
@@ -894,7 +890,17 @@
     "INDIVIDUAL_VOLUNTEER_ALONE_DESCRIPTION": "I am volunteering on my own",
     "INDIVIDUAL_VOLUNTEER_ALONE_HELP_TEXT": "Select this option if you are volunteering independently.",
     "NO_ACTIVE_COHORTS_FOUND": "No active cohorts found",
-    "ORGANISATION_TYPE": "Organisation Type"
+    "ORGANISATION_TYPE": "Organisation Type",
+    "HYBRID": "Hybrid",
+    "ODIA": "ଓଡ଼ିଆ",
+    "TELUGU": "తెలుగు",
+    "KANNADA": "ಕನ್ನಡ",
+    "TAMIL": "தமிழ்",
+    "GUJARATI": "ગુજરાતી",
+    "BENGALI": "বাংলা",
+    "WHAT_IS_YOUR_PREFERRED_LANGUAGE": "What is your preferred language",
+    "TYPE_OF_PHONE_ACCESSIBLE": "Type of Phone Accessible",
+    "CONSENT_FILE": "Consent File"
   },
   "ORGANISATION_NAME": "Organisation Name",
   "FORM_ERROR_MESSAGES": {
@@ -920,11 +926,6 @@
     "DATE_MUST_BE_ON_OR_AFTER": "Date must be on or after {{date}}"
   },
   "Assessment Score": "Assessment Score",
-  "CONSENT_FILE": "Consent File",
-  "VIEW_FILE": "View File",
-  "FILE_PREVIEW": "File Preview",
-
-  
   "FILTER_KEY": {
     "GROUP_MEMBERSHIP": "groupMembership",
     "JOB_FAMILY": "jobFamily",
@@ -986,14 +987,6 @@
     "IF_ANSWER_SHEET_MULTIPLE_PAGES": "• If the answer sheet has multiple pages, take a picture of each page separately and upload",
     "READ_LESS": "Read Less",
     "READ_MORE": "Read More"
-  },
-  "REATTEMPT_CHECK": {
-    "PLEASE_WAIT": "Please wait...",
-    "MODAL_TITLE": "Assessment",
-    "REATTEMPT_BUTTON": "Reattempt",
-    "CONTINUE_BUTTON": "Continue",
-    "MAIN_MESSAGE": "Would you like to reattempt the saral test or continue into the app?",
-    "SUB_MESSAGE": "You can reattempt the registration saral test or skip it and continue to your dashboard."
   },
   "ASSESSMENTS": {
     "ASSESSMENTS": "Assessments",
@@ -1067,8 +1060,21 @@
     "SELECT_BATCH": "Select batch",
     "VALUE_NOT_IN_LIST": "Current value not in loaded list; pick a batch again if needed."
   },
+  "CONSENT_FILE": "Consent File",
+  "VIEW_FILE": "View File",
+  "FILE_PREVIEW": "File Preview",
+  "REATTEMPT_CHECK": {
+    "PLEASE_WAIT": "Please wait...",
+    "MODAL_TITLE": "Assessment",
+    "REATTEMPT_BUTTON": "Reattempt",
+    "CONTINUE_BUTTON": "Continue",
+    "MAIN_MESSAGE": "Would you like to reattempt the saral test or continue into the app?",
+    "SUB_MESSAGE": "You can reattempt the registration saral test or skip it and continue to your dashboard."
+  },
   "During": "Learn",
   "Postrequisite": "Practice",
   "Facilitator-requisite": "Facilitator-requisite",
-  "Prerequisite": "Prepare"
+  "Prerequisite": "Prepare",
+  "Select_Language_For_Learning": "Select the language in which you want to learn",
+  "Learning_Language_Info": "Content, courses, and assessments will be shown in your selected language. You can change this language anytime from the Profile section"
 }

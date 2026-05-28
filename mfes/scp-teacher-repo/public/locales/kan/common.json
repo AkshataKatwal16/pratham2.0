@@ -186,7 +186,6 @@
     "NOT_ABLE_UPDATE_FACILITATOR": "ಫೆಸಿಲಿಟೇಟರ್ ಅನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
     "HI": "ನಮಸ್ಕಾರ, {{name}}",
     "FAQS": "ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು (FAQ)",
-    "NEXT": "ಮುಂದೆ",
     "PLEASE_SELECT_AT_LEAST_ONE_BATCH": "ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಬ್ಯಾಚ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
     "PLEASE_SEARCH_AND_SELECT_USER": "ದಯವಿಟ್ಟು ಹುಡುಕಿ ಮತ್ತು ಬಳಕೆದಾರರನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
     "PLEASE_SELECT_CENTER": "ದಯವಿಟ್ಟು ಕೇಂದ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
@@ -194,7 +193,19 @@
     "REASSIGN_LEARNER_TO_BATCH": "ಕಲಿಯುವವರನ್ನು ಬ್ಯಾಚ್‌ಗೆ ಮರುನಿಯೋಜಿಸಿ",
     "LOADING_ELLIPSIS": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
     "SELECT_BATCH_WIDGET_TITLE": "ಬ್ಯಾಚ್ ಆಯ್ಕೆಮಾಡಿ",
-    "PLEASE_SELECT_BATCH": "ದಯವಿಟ್ಟು ಒಂದು ಬ್ಯಾಚ್ ಆಯ್ಕೆಮಾಡಿ"
+    "PLEASE_SELECT_BATCH": "ದಯವಿಟ್ಟು ಒಂದು ಬ್ಯಾಚ್ ಆಯ್ಕೆಮಾಡಿ",
+    "NEXT": "ಮುಂದೆ",
+    "RESET_ATTENDANCE": "ಹಾಜರಾತಿಯನ್ನು ಮರುಹೊಂದಿಸುವುದೇ?",
+    "RESET_ATTENDANCE_CONFIRM_MESSAGE": "ಹಾಜರಾತಿಯನ್ನು ಮರುಹೊಂದಿಸುವುದರಿಂದ, ಈ ದಿನದ ಎಲ್ಲಾ ಗುರುತಿಸಲಾದ ಹಾಜರಾತಿಗಳು, ನೇರ  ಮತ್ತು ಆನ್‌ಲೈನ್  ಸೆಷನ್‌ಗಳು ಸೇರಿದಂತೆ ತೆರವುಗೊಳಿಸಲ್ಪಡುತ್ತವೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.",
+    "RESET_ATTENDANCE_BUTTON": "ಹಾಜರಾತಿಯನ್ನು ಮರುಹೊಂದಿಸಿ",
+    "MAP_NEW": "ಹೊಸದನ್ನು ಜೋಡಿಸಿ",
+    "RESIGNED_FROM_COMPANY": "ಕಂಪನಿಗೆ ರಾಜೀನಾಮೆ ನೀಡಿದ್ದಾರೆ",
+    "MOVED_TO_DIFFERENT_ROLE": "ವಿಭಿನ್ನ ಪಾತ್ರಕ್ಕೆ ತೆರಳಿದ್ದಾರೆ",
+    "DELETE_FROM_BATCH_WARNING": "ಮೇಲಿನ  ಸೆಂಟರ್ ಗಳ ಬ್ಯಾಚ್‌ಗಳಿಂದ ಬಳಕೆದಾರರನ್ನು ಡಿಲೀಟ್ ಮಾಡಲು ನೀವು ಬಯಸುವಿರಾ?",
+    "COPY_REGISTRATION_LINK": "ನೋಂದಣಿ ಲಿಂಕ್ ಅನ್ನು ಕಾಪಿ ಮಾಡಿ",
+    "REGISTRATION_LINK_COPIED": "ನೋಂದಣಿ ಲಿಂಕ್ ಅನ್ನು ಕಾಪಿ ಮಾಡಲಾಗಿದೆ!\n \n ಕಾರ್ಯಕ್ರಮ ನೋಂದಣಿಗಾಗಿ ಈ ಲಿಂಕ್ ಅನ್ನು ಕಲಿಯುವವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.",
+    "TRY_AGAIN": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    "DOWNLOAD": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
   },
   "LOGIN_PAGE": {
     "USERNAME": "ಬಳಕೆದಾರಹೆಸರು",
@@ -312,7 +323,15 @@
     "MANUAL_ATTENDANCE_NOTE": "ಗಮನಿಸಿ: ಕೈಯಾರೆ ಗುರುತಿಸಿದ ಹಾಜರಾತಿಯು ಸ್ವಯಂಚಾಲಿತ ಹಾಜರಾತಿಯನ್ನು ಮೀರಿಸುತ್ತದೆ, ಒಂದು ವೇಳೆ ಇದನ್ನು ನಂತರ ದಾಖಲಿಸಿದರೆ।",
     "NO_BATCHES_ASSIGNED": "ಯಾವುದೇ ಬ್ಯಾಚ್‌ಗಳನ್ನು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ",
     "ABSENT_STUDENTS": "ಹಾಜರಿರದ ವಿದ್ಯಾರ್ಥಿಗಳು: {{count}}",
-    "N/A": "ಉಪಲಬ್ಧ ಇಲ್ಲ"
+    "N/A": "ಉಪಲಬ್ಧ ಇಲ್ಲ",
+    "ATTENDANCE_RESET_SUCCESSFULLY": "ಹಾಜರಾತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಮರುಹೊಂದಿಸಲಾಗಿದೆ",
+    "IN_PERSON_SESSIONS": "ನೇರ ಸೆಷನ್‌ಗಳು ({{count}})",
+    "ONLINE_SESSIONS": "ಆನ್‌ಲೈನ್ ಸೆಷನ್‌ಗಳು ({{count}})",
+    "ONLINE_ATTENDANCE_AUTO_MARKED_NOTE": "50% ಅವಧಿಯ ಮಿತಿಯನ್ನು ಆಧರಿಸಿ ಆನ್‌ಲೈನ್ ಹಾಜರಾತಿಯನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಗುರುತಿಸಲಾಗುತ್ತದೆ.",
+    "SUBMIT_ATTENDANCE": "ಹಾಜರಾತಿಯನ್ನು ಸಲ್ಲಿಸಿ",
+    "NO_SESSIONS_FOR_DAY": "ಈ ದಿನಕ್ಕೆ ಯಾವುದೇ ಸೆಷನ್‌ಗಳು ನಿಗದಿಯಾಗಿಲ್ಲ",
+    "NO_IN_PERSON_SESSIONS": "ಯಾವುದೇ ಇನ್-ಪರ್ಸನ್ ಸೆಷನ್‌ಗಳು ನಿಗದಿಯಾಗಿಲ್ಲ",
+    "NO_ONLINE_SESSIONS": "ಯಾವುದೇ ಆನ್‌ಲೈನ್ ಸೆಷನ್‌ಗಳು ನಿಗದಿಯಾಗಿಲ್ಲ"
   },
   "PROFILE": {
     "EDIT_PROFILE": "ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ",
@@ -538,7 +557,8 @@
     "DELETE_THIS_SESSION": "ಈ ಸೆಷನ್ ಅಳಿಸಿ",
     "LEARNER_PREREQUISITES": "ಕಲಿಯುವವರ ಪೂರ್ವಾಪೇಕ್ಷಿತಗಳು",
     "LEARNER_POSTREQUISITES": "ಕಲಿಯುವವರ ನಂತರದ ಅವಶ್ಯಕತೆಗಳು",
-    "DURING_COURSE": "ಕಲಿ"
+    "DURING_COURSE": "ಕಲಿ",
+    "REMOVE_TOPIC_SUBTOPIC_CONFIRMATION": "ನೀವು ವಿಷಯ ಮತ್ತು ಉಪವಿಷಯವನ್ನು ತೆಗೆದುಹಾಕಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"
   },
   "MANAGE_USERS": {
     "CENTERS_REQUESTED_SUCCESSFULLY": "ಕೇಂದ್ರವು ಯಶಸ್ವಿಯಾಗಿ ವಿನಂತಿಸಿದೆ",
@@ -646,7 +666,7 @@
     "EDUCATIONAL_INSTITUTE": "ಶೈಕ್ಷಣಿಕ ಸಂಸ್ಥೆ",
     "UNEMPLOYED_OR_DOMESTIC_WORK": "ನಿರುದ್ಯೋಗಿ ಅಥವಾ ಗೃಹ ಕೆಲಸ",
     "SELF_PLACED": "ಸ್ವಯಂ-ನಿಯೋಜಿತ",
-    "TRANSGENDER": "ಟ್ರಾನ್ಸ್‌ಜೆಂಡರ್",
+    "TRANSGENDER": "ಇತರ",
     "HINDI": "ಹಿಂದಿ",
     "MARATHI": "ಮರಾಠಿ",
     "URDU": "ಉರ್ದು",
@@ -688,7 +708,13 @@
     "GRADE_9": "ಗ್ರೇಡ್ 9",
     "GRADE_10": "ಗ್ರೇಡ್ 10",
     "GRADE_11": "ಗ್ರೇಡ್ 11",
-    "GRADE_12": "ಗ್ರೇಡ್ 12"
+    "GRADE_12": "ಗ್ರೇಡ್ 12",
+    "BELONG_TO": "ಸೇರಿದೆ",
+    "BELONG_TO_MULTIPLE_CENTERS": "ಕೆಳಗಿನ  ಸೆಂಟರ್ ಗಳಿಗೆ ಸೇರಿದೆ",
+    "WAS_BELONG_TO": "ಸೇರಿತ್ತು",
+    "DO_YOU_WANT_TO_DELETE": "ನೀವು ಈ ಬಳಕೆದಾರರನ್ನು ಅಳಿಸಲು ಬಯಸುವಿರಾ?",
+    "DO_YOU_WANT_TO_DELETE_MULTIPLE_CENTERS": "ನೀವು ಎಲ್ಲಾ ಬಳಕೆದಾರರನ್ನು ಸೆಂಟರ್ ಗಳಿಂದ ಡಿಲೀಟ್ ಮಾಡಲು  ಬಯಸುವಿರಾ?",
+    "CONSENT_FILE": "ಒಪ್ಪಿಗೆ ಫೈಲ್"
   },
   "FORM_ERROR_MESSAGES": {
     "INVALID_INPUT": "ಇನ್ ವ್ಯಾಲಿಡ್ ಇನ್‌ಪುಟ್.",
@@ -855,7 +881,8 @@
     "STATE_DISTRICT_BLOCK_VILLAGE": "ಗ್ರಾಮ ಬ್ಲಾಕ್ ಜಿಲ್ಲೆ ರಾಜ್ಯ",
     "USERNAME": "ಬಳಕೆದಾರ ಹೆಸರು",
     "SUBJECTS_I_TEACH": "ನಾನು ಕಲಿಸುವ ವಿಷಯಗಳು",
-    "MY_MAIN_SUBJECTS": "ನನ್ನ ಮುಖ್ಯ ವಿಷಯಗಳು"
+    "MY_MAIN_SUBJECTS": "ನನ್ನ ಮುಖ್ಯ ವಿಷಯಗಳು",
+    "WHAT_IS_YOUR_PREFERRED_MODE_OF_LEARNING": "ನಿಮ್ಮ ಆದ್ಯತೆಯ ಕಲಿಕೆಯ ವಿಧಾನ ಯಾವುದು?"
   },
   "YOUTHNET_USERS_AND_VILLAGES": {
     "MENTORS": "ಮಾರ್ಗದರ್ಶಕರು",
@@ -1046,9 +1073,22 @@
     "YOU_CANT_DELETE_BATCH_HAS_ACTIVE_LEARNERS": "{{activeMembers}} ಸಕ್ರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳಿದ್ದಾರೆ ಆದ್ದರಿಂದ ಬ್ಯಾಚ್ ಅನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ",
     "NO_BATCH_FOUND": "ಯಾವುದೇ ಬ್ಯಾಚ್ ಕಂಡುಬಂದಿಲ್ಲ"
   },
+  "MENTORS": {
+    "NEW_MENTOR": "ಹೊಸ ಮಾರ್ಗದರ್ಶಕ",
+    "FIRST_SELECT_REQUIRED_FIELDS": "ಮೊದಲು ಅಗತ್ಯವಿರುವ ಕ್ಷೇತ್ರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "MENTOR_CREATED_SUCCESSFULLY": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ!",
+    "USER_CREDENTIALS_WILL_BE_SEND_SOON": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ರಚಿಸಲಾಗಿದೆ, ರುಜುವಾತುಗಳನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.",
+    "MENTOR_UPDATED_SUCCESSFULLY": "ಮೆಂಟರ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ!",
+    "EDIT_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ಸಂಪಾದಿಸಿ",
+    "NOT_ABLE_UPDATE_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
+    "NOT_ABLE_CREATE_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
+    "UPDATE_MENTOR": "ಮೆಂಟರ್ ಅನ್ನು ನವೀಕರಿಸಿ",
+    "RE_ASSIGN_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ಮರು ನಿಯೋಜಿಸಿ"
+  },
   "AI": {
     "ASSESSMENT_DETAILS": "ಮೌಲ್ಯಮಾಪನ ವಿವರಗಳು",
     "SAMPLE_QUESTION_AND_ANSWER_PAPER": "ಮಾದರಿ ಪ್ರಶ್ನೆ ಮತ್ತು ಉತ್ತರ ಪತ್ರಿಕೆ",
+    "DOWNLOAD_QUESTION_PAPER": "ಪ್ರಶ್ನೆ ಪತ್ರಿಕೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
     "SEARCH_LEARNER": "ಅಧ್ಯಯನಾರ್ಥಿಯನ್ನು ಹುಡುಕಿ..",
     "TOTAL_LEARNERS": "{{count}} / {{total}} ಅಧ್ಯಯನಾರ್ಥಿಗಳು",
     "SORT_AND_FILTER_LEARNERS": "ಅಧ್ಯಯನಾರ್ಥಿಗಳನ್ನು ವಿಂಗಡಿಸಿ ಮತ್ತು ಫಿಲ್ಟರ್ ಮಾಡಿ",
@@ -1101,11 +1141,56 @@
     "IF_ANSWER_SHEET_MULTIPLE_PAGES": "• ಉತ್ತರ ಶೀಟಿನಲ್ಲಿ ಅನೇಕ ಪುಟಗಳಿದ್ದರೆ, ಪ್ರತಿ ಪುಟವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಫೋಟೋ ತೆಗೆದು ಅಪ್ಲೋಡ್ ಮಾಡಿ",
     "READ_LESS": "ಕಡಿಮೆ ಓದಿ",
     "READ_MORE": "ಇನ್ನಷ್ಟು ಓದಿ",
-    "DOWNLOAD_QUESTION_PAPER": "ಪ್ರಶ್ನೆ ಪತ್ರಿಕೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+    "EXPLANATION": "ವಿವರಣೆ:",
+    "SEE_LESS": "ಕಡಿಮೆ ನೋಡಿ",
+    "SEE_MORE": "ಇನ್ನಷ್ಟು ನೋಡಿ",
+    "MARKS_LABEL": "ಅಂಕಗಳು:",
+    "APPROVE_MARKS_NOTIFY_LEARNER": "ಅಂಕಗಳನ್ನು ಅನುಮೋದಿಸಿ ಮತ್ತು ಕಲಿಯುವವರಿಗೆ ಸೂಚಿಸಿ",
+    "NO_ASSESSMENT_DATA": "ಯಾವುದೇ ಮೌಲ್ಯಮಾಪನ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ.",
+    "CHECK_IF_COMPLETED": "ಮೌಲ್ಯಮಾಪನ ಪೂರ್ಣಗೊಂಡಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "DATE_LABEL": "ದಿನಾಂಕ",
+    "STUDENT_NAME": "ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರು",
+    "TOTAL_SCORE": "ಒಟ್ಟು ಅಂಕ",
+    "PERCENTAGE": "ಶೇಕಡ",
+    "STUDENT_ANSWER": "ವಿದ್ಯಾರ್ಥಿಯ ಉತ್ತರ",
+    "AI_EXPLANATION_LABEL": "AI ವಿವರಣೆ",
+    "NO_RESPONSE_AVAILABLE": "ಯಾವುದೇ ಪ್ರತಿಕ್ರಿಯೆ ಲಭ್ಯವಿಲ್ಲ.",
+    "FILL_IN_THE_BLANKS": "ಬಿಟ್ಟ ಸ್ಥಳಗಳನ್ನು ಭರ್ತಿ ಮಾಡಿ",
+    "MULTIPLE_CHOICE_QUESTIONS": "ಬಹು ಆಯ್ಕೆಯ ಪ್ರಶ್ನೆಗಳು",
+    "SHORT_ANSWER_QUESTIONS": "ಸಣ್ಣ ಉತ್ತರ ಪ್ರಶ್ನೆಗಳು",
+    "LONG_ANSWER_QUESTIONS": "ದೀರ್ಘ ಉತ್ತರ ಪ್ರಶ್ನೆಗಳು",
+    "UNKNOWN_SECTION": "ತಿಳಿಯದ ವಿಭಾಗ",
+    "GENERATED_ON": "{{date}} ರಂದು ರಚಿಸಲಾಗಿದೆ",
+    "PAGE_LABEL": "ಪುಟ {{totalPages}} ದಲ್ಲಿ { pageNumber}}",
+    "TAKE_PHOTO": "ಫೋಟೋ ತೆಗೆಯಿರಿ",
+    "LOADING_CAMERA": "ಕ್ಯಾಮೆರಾ ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+    "UPLOADING": "ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...",
+    "MAX_IMAGES": "ಲೆಕ್ಕ{{count}} ಹಾಕಿ",
+    "TAKE_A_PHOTO": "ಫೋಟೋ ತೆಗೆಯಿರಿ",
+    "UPLOAD_A_PHOTO": "ಫೋಟೋ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "SUBMITTING": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ...",
+    "UPLOADING_FILES": "ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...",
+    "SAVE_AND_UPLOAD": "ಸೇವ್ ಮತ್ತು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "UPLOAD_LIMIT_EXCEEDED": "ನೀವು (count) ಚಿತ್ರಗಳವರೆಗೆ ಮಾತ್ರ ಅಪ್‌ಲೋಡ್ ಮಾಡಬಹುದು",
+    "INVALID_FILE_TYPE": "ದಯವಿಟ್ಟು ಮಾನ್ಯ ಇಮೇಜ್ ಫೈಲ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ (jpg, jpeg)",
+    "FILE_SIZE_EXCEEDED": "ಫೈಲ್ 5MB ಮಿತಿಯನ್ನು ಮೀರಿದೆ. ದಯವಿಟ್ಟು ಚಿಕ್ಕ ಫೈಲ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "IMAGES_UPLOADED_SUCCESS": "ಚಿತ್ರಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ!",
+    "UPLOAD_GALLERY_FAILED": "ಗ್ಯಾಲರಿಯಿಂದ ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "PHOTO_CAPTURED_SUCCESS": "ಫೋಟೋ ತೆಗೆದು ಯಶಸ್ವಿಯಾಗಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ!",
+    "CAMERA_UPLOAD_FAILED": "ಕ್ಯಾಮೆರಾದಿಂದ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "MISSING_REQUIRED_PARAMS": "ಅಗತ್ಯವಿರುವ ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು ಕಾಣೆಯಾಗಿವೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "UPLOAD_ONE_IMAGE_FIRST": "ಸಲ್ಲಿಸುವ ಮೊದಲು ಕನಿಷ್ಠ ಒಂದು ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
+    "ANSWER_SHEET_SUBMITTED": "ಉತ್ತರ ಪತ್ರಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ!",
+    "SUBMIT_ANSWER_SHEET_FAILED": "ಉತ್ತರ ಪತ್ರಿಕೆಯನ್ನು ಸಲ್ಲಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "PAPER_LABEL": "ಪೇಪರ್",
+    "MAX_MARKS": "ಗರಿಷ್ಠ ಅಂಕಗಳು:",
+    "SECTION_LABEL": "ವಿಭಾಗ:",
+    "SECTION_MAX": "ಗರಿಷ್ಠ ವಿಭಾಗ:",
+    "AWARDED": "ಪ್ರಶಸ್ತಿ ಪಡೆದವರು:",
+    "OVERALL_AWARDED": "ಒಟ್ಟಾರೆ ಪ್ರಶಸ್ತಿ ಪಡೆದವರು:",
+    "MANUAL_ASSESSMENT_REPORT": "ಮೌಲ್ಯಮಾಪನ ವರದಿಯ ಕೈಪಿಡಿ"
   },
   "USER_REGISTRATION": {
-    "SELECT_ALL": "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ",
-    "DESELECT_ALL": "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ",
     "LEARNER_REGISTRATIONS": "ಕಲಿಯುವವರ ನೋಂದಣಿಗಳು",
     "SEARCH_LEARNER": "ಕಲಿಯುವವರನ್ನು ಹುಡುಕಿ..",
     "TO_TAKE_ACTION_SELECT_LEARNER": "ಕ್ರಮ ಕೈಗೊಳ್ಳಲು, ಕನಿಷ್ಠ ಒಬ್ಬ ಕಲಿಯುವವರನ್ನು ಆಯ್ಕೆಮಾಡಿ",
@@ -1144,18 +1229,11 @@
     "MOVED_TO_BATCH": "ಮತ್ತು ಬ್ಯಾಚ್‌ಗೆ ಸ್ಥಳಾಂತರಗೊಂಡರು",
     "OKAY": "ಸರಿ",
     "NOT_INTERESTED_TO_JOIN": "ಸೇರಲು ಆಸಕ್ತಿ ಇಲ್ಲ.",
-    "INTERESTED_MAY_JOIN_NEXT_YEAR": "ಆಸಕ್ತಿ ಇದೆ, ಮುಂದಿನ ವರ್ಷ ಸೇರಬಹುದು."
+    "INTERESTED_MAY_JOIN_NEXT_YEAR": "ಆಸಕ್ತಿ ಇದೆ, ಮುಂದಿನ ವರ್ಷ ಸೇರಬಹುದು.",
+    "SELECT_ALL": "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ",
+    "DESELECT_ALL": "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ",
+    "ASSESSMENT_SCORES": "ಮೌಲ್ಯಮಾಪನ ಅಂಕಗಳು"
   },
-  "MENTORS": {
-    "NEW_MENTOR": "ಹೊಸ ಮಾರ್ಗದರ್ಶಕ",
-    "FIRST_SELECT_REQUIRED_FIELDS": "ಮೊದಲು ಅಗತ್ಯವಿರುವ ಕ್ಷೇತ್ರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-    "MENTOR_CREATED_SUCCESSFULLY": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ!",
-    "USER_CREDENTIALS_WILL_BE_SEND_SOON": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ರಚಿಸಲಾಗಿದೆ, ರುಜುವಾತುಗಳನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.",
-    "MENTOR_UPDATED_SUCCESSFULLY": "ಮೆಂಟರ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ!",
-    "EDIT_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ಸಂಪಾದಿಸಿ",
-    "NOT_ABLE_UPDATE_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
-    "NOT_ABLE_CREATE_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
-    "UPDATE_MENTOR": "ಮೆಂಟರ್ ಅನ್ನು ನವೀಕರಿಸಿ",
-    "RE_ASSIGN_MENTOR": "ಮಾರ್ಗದರ್ಶಕರನ್ನು ಮರು ನಿಯೋಜಿಸಿ"
-  }
+  "Select_Language_For_Learning": "ನೀವು ಕಲಿಯಲು ಬಯಸುವ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+  "Learning_Language_Info": "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಭಾಷೆಯಲ್ಲಿ ವಿಷಯಗಳು, ಕೋರ್ಸ್‌ಗಳು ಮತ್ತು ಮೌಲ್ಯಮಾಪನಗಳು  ತೋರಿಸಲಾಗುತ್ತದೆ.ಈ ಭಾಷೆಯನ್ನು ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಪ್ರೊಫೈಲ್  ವಿಭಾಗದಿಂದ ಬದಲಾಯಿಸಬಹುದು."
 }

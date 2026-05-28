@@ -153,9 +153,9 @@
     "NO_CONTENT_CREATOR_FOUND": "ವಿಷಯ ಸೃಷ್ಟಿಕರ್ತ (SCTA) ಸಿಕ್ಕಿಲ್ಲ",
     "NO_CONTENT_REVIEWER_FOUND": "ವಿಷಯ ವಿಮರ್ಶಕ (CCTA) ಸಿಕ್ಕಿಲ್ಲ",
     "LOADING": "ಲೋಡ್ ಆಗುತ್ತಿದೆ",
-    "USER_DELETE_SUCCSSFULLY": "ಬಳಕೆದಾರರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ",
     "SURE_REASSIGN_CENTER": "ಈ ಬಳಕೆದಾರರಿಗೆ ಕೇಂದ್ರವನ್ನು ಮರು ನಿಯೋಜಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
     "SORT": "ವಿಂಗಡಿಸಿ",
+    "USER_DELETE_SUCCSSFULLY": "ಬಳಕೆದಾರರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ",
     "ARE_YOU_SURE_DELETE_STATE": "ಈ ರಾಜ್ಯದಲ್ಲಿ {{district}} ಸಕ್ರಿಯ ಜಿಲ್ಲೆಗಳಿವೆ, ಅದನ್ನು ನೀವು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.",
     "ADD": "ಸೇರಿಸಿ",
     "SUBMIT_YOUR_REQUEST_FOR_ISSUES": "გამოგვიგზავნეთ თქვენი მოთხოვნა და მოგვეცით საშუალება დაგეხმაროთ ნებისმიერი პრობლემის ან შეშფოთების მოგვარებაში.",
@@ -169,7 +169,19 @@
     "MOVED_TO_DIFFERENT_ROLE": "სხვა როლზე გადავიდა",
     "NO_MOBILIZER_FOUND": "მენტორი ვერ მოიძებნა",
     "MAP": "რუკა",
-    "NEXT": "შემდეგი"
+    "NEXT": "შემდეგი",
+    "REDIRECTING": "ಮರುನಿರ್ದೇಶಿಸಲಾಗುತ್ತಿದೆ...",
+    "SELECT_LANGUAGE": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "GOOGLE_DOC_VIEWER": "ಗೂಗಲ್ ಡಾಕ್ ವೀಕ್ಷಕ",
+    "SELECT_BATCHES_FOR": "{{name}} ಗಾಗಿ ಬ್ಯಾಚ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "GO_BACK_WITHOUT_SAVING": "ಸೇವ್ ಮಾಡದೆಯೇ ಹಿಂತಿರುಗಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+    "NO_CANCEL": "ಇಲ್ಲ, ರದ್ದುಗೊಳಿಸಿ",
+    "YES_GO_BACK": "ಹೌದು, ಹಿಂತಿರುಗಿ",
+    "DO_ID_NOT_FOUND": "Do ID ಸಿಗಲಿಲ್ಲವೇ?",
+    "USER_BATCHES": "{{name}} ಈ ಕೆಳಗಿನ ಬ್ಯಾಚ್‌ಗಳಿಗೆ ಸೇರಿದೆ",
+    "DELETE_FROM_BATCH_WARNING": "ಮೇಲಿನ  ಸೆಂಟರ್ ಗಳ ಬ್ಯಾಚ್‌ಗಳಿಂದ ಬಳಕೆದಾರರನ್ನು ಡಿಲೀಟ್ ಮಾಡಲು ನೀವು ಬಯಸುವಿರಾ?",
+    "SAVING": "ಉಳಿಸಲಾಗುತ್ತಿದೆ...",
+    "MAP_NEW": "ಹೊಸದನ್ನು ಜೋಡಿಸಿ"
   },
   "LOGIN_PAGE": {
     "USERNAME": "ಬಳಕೆದಾರಹೆಸರು",
@@ -208,7 +220,8 @@
     "CURRENT_PASSWORD_NOT": "ಪ್ರಸ್ತುತ ಪಾಸ್‌ವರ್ಡ್ ಹೊಂದಿಕೆಯಾಗುತ್ತಿಲ್ಲ",
     "NO_USERNAME": "ಬಳಕೆದಾರಹೆಸರು ಕಂಡುಬಂದಿಲ್ಲ.",
     "PASSWORD_SAME_AS_OLD": "ಪಾಸ್‌ವರ್ಡ್ ಹಳೆಯಂತೆಯೇ ಇದೆ",
-    "YOU_DONT_HAVE_APPROPRIATE_PRIVILEGES_TO_ACCESS": "ಈ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರವೇಶಿಸಲು ನಿಮಗೆ ಸೂಕ್ತ ಸವಲತ್ತುಗಳಿಲ್ಲ."
+    "YOU_DONT_HAVE_APPROPRIATE_PRIVILEGES_TO_ACCESS": "ಈ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರವೇಶಿಸಲು ನಿಮಗೆ ಸೂಕ್ತ ಸವಲತ್ತುಗಳಿಲ್ಲ.",
+    "SET_PASSWORD": "ಪಾಸ್‌ವರ್ಡ್ ಹೊಂದಿಸಿ"
   },
   "SIDEBAR": {
     "HI": "ಹಾಯ್",
@@ -362,7 +375,10 @@
     "CSV_TEMPLATE": "CSV შაბლონი",
     "NEW_TOPIC": "ახალი თემა",
     "DOWNLOAD_CSV": "ატვირთული CSV ფაილის ჩამოტვირთვა",
-    "DURING_COURSE": "სწავლა"
+    "DURING_COURSE": "სწავლა",
+    "OPTION_1": "ಆಯ್ಕೆ 1",
+    "OPTION_2": "ಆಯ್ಕೆ 2",
+    "OPTION_3": "ಆಯ್ಕೆ 3"
   },
   "MASTER": {
     "STATE": "ರಾಜ್ಯ",
@@ -518,7 +534,7 @@
     "EDUCATIONAL_INSTITUTE": "ಶಿಕ್ಷಣ ಸಂಸ್ಥೆ",
     "UNEMPLOYED_OR_DOMESTIC_WORK": "ಉದ್ಯೋಗರಹಿತ ಅಥವಾ ಮನೆಯ ಕೆಲಸ",
     "SELF_PLACED": "ಸ್ವಯಂ ಉದ್ಯೋಗ",
-    "TRANSGENDER": "ಟ್ರಾನ್ಸ್‌ಜೆಂಡರ್",
+    "TRANSGENDER": "ಇತರ",
     "HINDI": "ಹಿಂದಿ",
     "MARATHI": "ಮರಾಠಿ",
     "URDU": "ಉರ್ದು",
@@ -531,6 +547,7 @@
     "BOARD": "ಬೋರ್ಡ್",
     "MEDIUM": "ಮಧ್ಯಮ",
     "GRADE": "ಗ್ರೇಡ್",
+    "CONTACT": "კონტაქტი",
     "USERNAME": "ಬಳಕೆದಾರಹೆಸರು",
     "DESCRIPTION": "ವಿವರಣೆ",
     "PROGRAM_NAME": "ಕಾರ್ಯಕ್ರಮದ ಹೆಸರು",
@@ -538,7 +555,6 @@
     "PROGRAM_TYPE": "ಕಾರ್ಯಕ್ರಮದ ಪ್ರಕಾರ",
     "PROGRAM_HEAD_NAME": "ಕಾರ್ಯಕ್ರಮದ ಮುಖ್ಯಸ್ಥರ ಹೆಸರು",
     "PROGRAM_IMAGE": "ಕಾರ್ಯಕ್ರಮದ ಚಿತ್ರ",
-    "CONTACT": "კონტაქტი",
     "BATCH": "პარტია",
     "PREFERRED_LANGUAGE": "სასურველი ენა",
     "FIRST_NAME": "სახელი",
@@ -552,7 +568,10 @@
     "CONFIRM_TO_ACTIVATE": "დარწმუნებული ხართ, რომ გსურთ ამ მომხმარებლის ხელახლა გააქტიურება?",
     "WORKING_LOCATION": "სამუშაო ადგილმდებარეობა",
     "CATCHMENT_AREA": "წყალშემკრები არეალია",
-    "TYPE_OF_BATCH": "პარტიის ტიპი"
+    "TYPE_OF_BATCH": "პარტიის ტიპი",
+    "BELONG_TO_MULTIPLE_CENTERS": "ಕೆಳಗಿನ  ಸೆಂಟರ್ ಗಳಿಗೆ ಸೇರಿದೆ",
+    "DO_YOU_WANT_TO_DELETE_MULTIPLE_CENTERS": "ನೀವು ಎಲ್ಲಾ ಬಳಕೆದಾರರನ್ನು ಸೆಂಟರ್ ಗಳಿಂದ ಡಿಲೀಟ್ ಮಾಡಲು  ಬಯಸುವಿರಾ?",
+    "DO_YOU_WANT_TO_DELETE_FROM_LOCATION": "ಈ ಸ್ಥಳದಿಂದ ಬಳಕೆದಾರರನ್ನು ಅಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ?"
   },
   "FORM_ERROR_MESSAGES": {
     "INVALID_INPUT": "ಅಮಾನ್ಯ ಇನ್‌ಪುಟ್.",
@@ -669,7 +688,9 @@
     "UPDATE_TEMPLATE": "ಟೆಂಪ್ಲೇಟ್ ಅನ್ನು ನವೀಕರಿಸಿ",
     "DELETE_TEMPLATE_ALERT": "ಈ ಟೆಂಪ್ಲೇಟ್ ಅನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
     "TEMPLATE_DELETED_SUCCESS": "{{templateId}} ಐಡಿ ಹೊಂದಿರುವ ಟೆಂಪ್ಲೇಟ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ",
-    "Add_TEMPLATE": "ಹೊಸ ಟೆಂಪ್ಲೇಟ್ ಸೇರಿಸಿ"
+    "Add_TEMPLATE": "ಹೊಸ ಟೆಂಪ್ಲೇಟ್ ಸೇರಿಸಿ",
+    "ERROR_DELETING_TEMPLATE": "ಟೆಂಪ್ಲೇಟ್ ಅಳಿಸುವಲ್ಲಿ ದೋಷ",
+    "ERROR_LOADING_DATA": "ಡೇಟಾವನ್ನು ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ದೋಷ."
   },
   "CERTIFICATES": {
     "SEARCHBAR_PLACEHOLDER": "ಹುಡುಕಾಟ...",
@@ -874,6 +895,10 @@
     "WORKING_LOCATION_REQUIRED_MISSING_VILLAGES": "სამუშაო მდებარეობა სავალდებულოა. გთხოვთ, ყველა ბლოკისთვის აირჩიოთ სოფლები. სოფლები აკლია: {{blocks}} და კიდევ {{count}} ბლოკში.",
     "WORKING_LOCATION_REQUIRED_MISSING_VILLAGES_SINGLE": "სამუშაო მდებარეობა სავალდებულოა. გთხოვთ, ყველა ბლოკისთვის აირჩიოთ სოფლები. სოფლები აკლია: {{ბლოკები}}.",
     "WORKING_LOCATION_REQUIRED_AT_LEAST_ONE": "სამუშაო ადგილი აუცილებელია. გთხოვთ, ყველა ბლოკში აირჩიოთ სულ მცირე ერთი სოფელი.",
-    "MOBILIZER_NAME": "მენტორის სახელი"
-  }
+    "MOBILIZER_NAME": "მენტორის სახელი",
+    "EDIT_MOBILIZER": "ಮೊಬಲೈಜರ್ ಎಡಿಟ್ ಮಾಡಿ"
+  },
+  "WELCOME_TO_YOUR_DASHBOARD": "ನಿಮ್ಮ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಸುಸ್ವಾಗತ.",
+  "Select_Language_For_Learning": "ನೀವು ಕಲಿಯಲು ಬಯಸುವ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+  "Learning_Language_Info": "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಭಾಷೆಯಲ್ಲಿ ವಿಷಯಗಳು, ಕೋರ್ಸ್‌ಗಳು ಮತ್ತು ಮೌಲ್ಯಮಾಪನಗಳು  ತೋರಿಸಲಾಗುತ್ತದೆ.ಈ ಭಾಷೆಯನ್ನು ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಪ್ರೊಫೈಲ್  ವಿಭಾಗದಿಂದ ಬದಲಾಯಿಸಬಹುದು."
 }

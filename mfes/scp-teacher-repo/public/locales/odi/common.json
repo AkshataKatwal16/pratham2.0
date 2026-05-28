@@ -186,7 +186,6 @@
     "NOT_ABLE_UPDATE_FACILITATOR": "ଫେସିଲେଟଟର ଅପଡେଟ  କରିପାରିଲେ ନାହିଁ",
     "HI": "ନମସ୍କାର, {{name}}",
     "FAQS": "ସାଧାରଣ ପ୍ରଶ୍ନୋତ୍ତର (FAQ's)",
-    "NEXT": "ପରବର୍ତ୍ତୀ",
     "PLEASE_SELECT_AT_LEAST_ONE_BATCH": "ଦୟାକରି ଅତି କମରେ ଗୋଟିଏ ବ୍ୟାଚ୍ ଚୟନ କରନ୍ତୁ",
     "PLEASE_SEARCH_AND_SELECT_USER": "ଦୟାକରି ସନ୍ଧାନ କରନ୍ତୁ ଏବଂ ଜଣେ ଉପଯୋଗକର୍ତ୍ତା ଚୟନ କରନ୍ତୁ।",
     "PLEASE_SELECT_CENTER": "ଦୟାକରି ଏକ କେନ୍ଦ୍ର ଚୟନ କରନ୍ତୁ।",
@@ -194,7 +193,19 @@
     "REASSIGN_LEARNER_TO_BATCH": "ଶିକ୍ଷାର୍ଥୀଙ୍କୁ ବ୍ୟାଚ୍‌କୁ ପୁନଃ ନିଯୁକ୍ତି କରନ୍ତୁ",
     "LOADING_ELLIPSIS": "ଲୋଡ୍ ହେଉଛି...",
     "SELECT_BATCH_WIDGET_TITLE": "ବ୍ୟାଚ୍ ବାଛନ୍ତୁ",
-    "PLEASE_SELECT_BATCH": "ଦୟାକରି ଏକ ବ୍ୟାଚ୍ ବାଛନ୍ତୁ"
+    "PLEASE_SELECT_BATCH": "ଦୟାକରି ଏକ ବ୍ୟାଚ୍ ବାଛନ୍ତୁ",
+    "NEXT": "ପରବର୍ତ୍ତୀ",
+    "RESET_ATTENDANCE": "ଉପସ୍ଥାନ ରିସେଟ୍ କରିବେ?",
+    "RESET_ATTENDANCE_CONFIRM_MESSAGE": "ଉପସ୍ଥାନକୁ ରିସେଟ୍ କରିବା ଦ୍ୱାରା ଏହି ଦିନର ସମସ୍ତ ଚିହ୍ନିତ ଉପସ୍ଥାନ ଖାଲି ହୋଇଯିବ, ଯେଉଁଥିରେ ବ୍ୟକ୍ତିଗତ ଏବଂ ଅନଲାଇନ୍ ଅଧିବେଶନ ଅନ୍ତର୍ଭୁକ୍ତ। ଏହି କାର୍ଯ୍ୟକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।",
+    "RESET_ATTENDANCE_BUTTON": "ଉପସ୍ଥାନ ରିସେଟ୍ କରନ୍ତୁ",
+    "MAP_NEW": "ନୂତନ ମ୍ୟାପ୍",
+    "RESIGNED_FROM_COMPANY": "କମ୍ପାନୀରୁ ଇସ୍ତଫା ଦେଇଛନ୍ତି",
+    "MOVED_TO_DIFFERENT_ROLE": "ଭିନ୍ନ ଭୂମିକାକୁ ସ୍ଥାନାନ୍ତରିତ ହୋଇଛି",
+    "DELETE_FROM_BATCH_WARNING": "ଆପଣ ଉପରୋକ୍ତ କେନ୍ଦ୍ରର ବ୍ୟାଚଗୁଡ଼ିକରୁ ଉପଯୋଗକର୍ତ୍ତାଙ୍କୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?",
+    "COPY_REGISTRATION_LINK": "ପଞ୍ଜିକରଣ ଲିଙ୍କ୍ କପି କରନ୍ତୁ",
+    "REGISTRATION_LINK_COPIED": "ପଞ୍ଜିକରଣ ଲିଙ୍କ୍ କପି ହୋଇଛି! ପ୍ରୋଗ୍ରାମ ପଞ୍ଜିକରଣ ପାଇଁ ଏହି ଲିଙ୍କ୍ ଶିକ୍ଷାର୍ଥୀମାନଙ୍କ ସହିତ ସେୟାର କରନ୍ତୁ।",
+    "TRY_AGAIN": "ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ",
+    "DOWNLOAD": "ଡାଉନଲୋଡ୍ କରନ୍ତୁ"
   },
   "LOGIN_PAGE": {
     "USERNAME": "ଉପଯୋଗକର୍ତା ନାମ",
@@ -312,7 +323,15 @@
     "MANUAL_ATTENDANCE_NOTE": "ନୋଟ: ଯଦି ପରେ ସ୍ୱୟଂଚାଳିତ ଉପସ୍ଥିତି  ରେକର୍ଡ ହୁଏ, ତେବେ ହାତେ ଚିହ୍ନିତ ଉପସ୍ଥିତି  ସେଥିପରେ ମଧ୍ୟ ତାହାକୁ ଅତିକ୍ରମ କରିବ।।",
     "NO_BATCHES_ASSIGNED": "କୌଣସି ବ୍ୟାଚ ନିୟୁକ୍ତ ହୋଇନାହିଁ",
     "ABSENT_STUDENTS": "ଅନୁପସ୍ଥିତ ଛାତ୍ର: {{count}}",
-    "N/A": "ଉପଲବ୍ଧ ନାହି"
+    "N/A": "ଉପଲବ୍ଧ ନାହି",
+    "ATTENDANCE_RESET_SUCCESSFULLY": "ଉପସ୍ଥାନକୁ ସଫଳତାର ସହ ରିସେଟ୍ କରାଯାଇଛି",
+    "IN_PERSON_SESSIONS": "ବ୍ୟକ୍ତିଗତ ଅଧିବେଶନ ({{count}})",
+    "ONLINE_SESSIONS": "ଅନଲାଇନ୍ ଅଧିବେଶନ ({{count}})",
+    "ONLINE_ATTENDANCE_AUTO_MARKED_NOTE": "50% ଅଧିବେଶନ ଅବଧି ସୀମା ଆଧାରରେ ଅନଲାଇନ୍ ଉପସ୍ଥାନ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଚିହ୍ନିତ ହୁଏ।",
+    "SUBMIT_ATTENDANCE": "ଉପସ୍ଥିତି ଦାଖଲ କରନ୍ତୁ",
+    "NO_SESSIONS_FOR_DAY": "ଏହି ଦିନ ପାଇଁ କୌଣସି ସେସନ୍ ସ୍ଥିର କରାଯାଇନାହିଁ",
+    "NO_IN_PERSON_SESSIONS": "କୌଣସି ବ୍ୟକ୍ତିଗତ ସେସନ୍ ସୂଚୀବଦ୍ଧ ନୁହେଁ",
+    "NO_ONLINE_SESSIONS": "କୌଣସି ଅନଲାଇନ୍ ସେସନ୍ ସୂଚୀବଦ୍ଧ କରାଯାଇନାହିଁ"
   },
   "PROFILE": {
     "EDIT_PROFILE": "ପ୍ରୋଫାଇଲ ଏଡିଟ/ସମ୍ପାଦନ କର",
@@ -538,7 +557,8 @@
     "DELETE_THIS_SESSION": "ଏହି ଅଧିବେଶନ ଡିଲିଟ୍ କରନ୍ତୁ |",
     "LEARNER_PREREQUISITES": "ଶିକ୍ଷାର୍ଥୀଙ୍କ  ପୂର୍ବଆବଶ୍ୟକତା",
     "LEARNER_POSTREQUISITES": "ଶିକ୍ଷାର୍ଥୀଙ୍କ  ପରବର୍ତ୍ତୀ ଆବଶ୍ୟକତା |",
-    "DURING_COURSE": "ଶିଖନ୍ତୁ"
+    "DURING_COURSE": "ଶିଖନ୍ତୁ",
+    "REMOVE_TOPIC_SUBTOPIC_CONFIRMATION": "ଆପଣ କ’ଣ ନିଶ୍ଚିତ ଯେ ଆପଣ ବିଷୟ ଏବଂ ଉପବିଷୟକୁ ହଟାଇବାକୁ ଚାହୁଁଛନ୍ତି?"
   },
   "MANAGE_USERS": {
     "CENTERS_REQUESTED_SUCCESSFULLY": "କେନ୍ଦ୍ର ଅନୁରୋଧ ସଫଳତାର ସହିତ",
@@ -646,7 +666,7 @@
     "EDUCATIONAL_INSTITUTE": "ଶୈକ୍ଷିକ ଅନୁଷ୍ଠାନ",
     "UNEMPLOYED_OR_DOMESTIC_WORK": "ବେକାର କିମ୍ବା ଘରୋଇ କାର୍ଯ୍ୟ",
     "SELF_PLACED": "ସ୍ୱୟଂ ନିଯୁକ୍ତ",
-    "TRANSGENDER": "ଟ୍ରାନ୍ସଜେଣ୍ଡର",
+    "TRANSGENDER": "ଅନ୍ୟ",
     "HINDI": "ହିନ୍ଦୀ",
     "MARATHI": "ମରାଠୀ",
     "URDU": "ଉର୍ଦ୍ଦୁ",
@@ -688,7 +708,13 @@
     "GRADE_9": "ଗ୍ରେଡ୍ 9",
     "GRADE_10": "ଗ୍ରେଡ୍ ଦଶମ",
     "GRADE_11": "ଗ୍ରେଡ୍ 11",
-    "GRADE_12": "ଗ୍ରେଡ୍ ଦ୍ୱାଦଶ"
+    "GRADE_12": "ଗ୍ରେଡ୍ ଦ୍ୱାଦଶ",
+    "BELONG_TO": "ର ଅଟେ",
+    "BELONG_TO_MULTIPLE_CENTERS": "ନିମ୍ନଲିଖିତ କେନ୍ଦ୍ରଗୁଡ଼ିକର ଅନ୍ତର୍ଭୁକ୍ତ",
+    "WAS_BELONG_TO": "ର ଥିଲା",
+    "DO_YOU_WANT_TO_DELETE": "ଆପଣ ଏହି ୟୁଜରଙ୍କୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?",
+    "DO_YOU_WANT_TO_DELETE_MULTIPLE_CENTERS": "ଆପଣ କ’ଣ ସମସ୍ତ କେନ୍ଦ୍ରରୁ ଉପଭୋକ୍ତାଙ୍କୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି?",
+    "CONSENT_FILE": "ସମ୍ମତି ଫାଇଲ୍"
   },
   "FORM_ERROR_MESSAGES": {
     "INVALID_INPUT": "ଅବୈଧ ଇନପୁଟ୍",
@@ -855,7 +881,8 @@
     "STATE_DISTRICT_BLOCK_VILLAGE": "ଗାଁ ବ୍ଲକ ଜିଲ୍ଲା ରାଜ୍ୟ",
     "USERNAME": "ବ୍ୟବହାରୀଙ୍କ  ନାମ",
     "SUBJECTS_I_TEACH": "ମୁଁ ପଢ଼ାଉଥିବା ବିଷୟଗୁଡିକ",
-    "MY_MAIN_SUBJECTS": "ମୋର ମୁଖ୍ୟ ବିଷୟଗୁଡ଼ିକ"
+    "MY_MAIN_SUBJECTS": "ମୋର ମୁଖ୍ୟ ବିଷୟଗୁଡ଼ିକ",
+    "WHAT_IS_YOUR_PREFERRED_MODE_OF_LEARNING": "ଆପଣଙ୍କ ପସନ୍ଦର ଶିକ୍ଷା ଭାବ କେଉଁଟି ?"
   },
   "YOUTHNET_USERS_AND_VILLAGES": {
     "MENTORS": "ମେଣ୍ଟର",
@@ -1046,9 +1073,22 @@
     "YOU_CANT_DELETE_BATCH_HAS_ACTIVE_LEARNERS": "ଏହି ବ୍ୟାଚ୍‌କୁ ଡିଲିଟ୍ କରିପାରିବେ ନାହିଁ କାରଣ ଏଥିରେ {{activeMembers}} ସକ୍ରିୟ ଶିକ୍ଷାର୍ଥୀ ଅଛନ୍ତି।",
     "NO_BATCH_FOUND": "କୌଣସି ବ୍ୟାଚ୍ ମିଳିଲା ନାହିଁ"
   },
+  "MENTORS": {
+    "NEW_MENTOR": "ନୂତନ ପରାମର୍ଶଦାତା",
+    "FIRST_SELECT_REQUIRED_FIELDS": "ପ୍ରଥମେ ଆବଶ୍ୟକୀୟ କ୍ଷେତ୍ରଗୁଡ଼ିକୁ ଚୟନ କରନ୍ତୁ",
+    "MENTOR_CREATED_SUCCESSFULLY": "ମେଣ୍ଟର ସଫଳତାର ସହ ସୃଷ୍ଟି ହୋଇଛି!",
+    "USER_CREDENTIALS_WILL_BE_SEND_SOON": "ମେଣ୍ଟର ତିଆରି ହୋଇଛି, ଶୀଘ୍ର ପ୍ରମାଣପତ୍ର ପଠାଯିବ।",
+    "MENTOR_UPDATED_SUCCESSFULLY": "ମେଣ୍ଟରଙ୍କୁ ସଫଳତାର ସହ ଅପଡେଟ୍ କରାଯାଇଛି!",
+    "EDIT_MENTOR": "ପରାମର୍ଶଦାତା ସମ୍ପାଦନ କରନ୍ତୁ",
+    "NOT_ABLE_UPDATE_MENTOR": "ପରାମର୍ଶଦାତାଙ୍କୁ ଅପଡେଟ୍ କରିପାରିଲେ ନାହିଁ",
+    "NOT_ABLE_CREATE_MENTOR": "ପରାମର୍ଶଦାତା ସୃଷ୍ଟି କରିପାରିଲେ ନାହିଁ",
+    "UPDATE_MENTOR": "ପରାମର୍ଶଦାତାଙ୍କୁ ଅପଡେଟ୍ କରନ୍ତୁ",
+    "RE_ASSIGN_MENTOR": "ମେଣ୍ଟରଙ୍କୁ ପୁନଃନିଯୁକ୍ତ କରନ୍ତୁ"
+  },
   "AI": {
     "ASSESSMENT_DETAILS": "ମୂଲ୍ୟାଙ୍କନ ବିବରଣୀ",
     "SAMPLE_QUESTION_AND_ANSWER_PAPER": "ନମୁନା ପ୍ରଶ୍ନ ଏବଂ ଉତ୍ତର ପତ୍ର",
+    "DOWNLOAD_QUESTION_PAPER": "ପ୍ରଶ୍ନପତ୍ର ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
     "SEARCH_LEARNER": "ଶିକ୍ଷାର୍ଥୀକୁ ଖୋଜନ୍ତୁ..",
     "TOTAL_LEARNERS": "{{count}} / {{total}} ଶିକ୍ଷାର୍ଥୀ",
     "SORT_AND_FILTER_LEARNERS": "ଶିକ୍ଷାର୍ଥୀଙ୍କୁ ବିଭାଜନ ଏବଂ ଫିଲ୍ଟର କରନ୍ତୁ",
@@ -1101,11 +1141,56 @@
     "IF_ANSWER_SHEET_MULTIPLE_PAGES": "• ଉତ୍ତର ପତ୍ରରେ ଯଦି ଅଧିକ ପୃଷ୍ଠା ଅଛି, ପ୍ରତ୍ୟେକ ପୃଷ୍ଠା ଅଲଗା ନେଇ ଅପଲୋଡ୍ କରନ୍ତୁ",
     "READ_LESS": "କମ୍ ପଢନ୍ତୁ",
     "READ_MORE": "ଅଧିକ ପଢନ୍ତୁ",
-    "DOWNLOAD_QUESTION_PAPER": "ପ୍ରଶ୍ନପତ୍ର ଡାଉନଲୋଡ୍ କରନ୍ତୁ"
+    "EXPLANATION": "ବ୍ୟାଖ୍ୟା:",
+    "SEE_LESS": "କମ୍ ଦେଖନ୍ତୁ",
+    "SEE_MORE": "ଅଧିକ ଦେଖନ୍ତୁ",
+    "MARKS_LABEL": "ଚିହ୍ନ:",
+    "APPROVE_MARKS_NOTIFY_LEARNER": "ମାର୍କ ଅନୁମୋଦନ କରନ୍ତୁ ଏବଂ ଶିକ୍ଷାର୍ଥୀଙ୍କୁ ସୂଚିତ କରନ୍ତୁ",
+    "NO_ASSESSMENT_DATA": "କୌଣସି ମୂଲ୍ୟାଙ୍କନ ଡାଟା ଉପଲବ୍ଧ ନାହିଁ",
+    "CHECK_IF_COMPLETED": "ମୂଲ୍ୟାଙ୍କନ ସମ୍ପୂର୍ଣ୍ଣ ହୋଇଛି କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ ଏବଂ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "DATE_LABEL": "ତାରିଖ",
+    "STUDENT_NAME": "ଛାତ୍ରଙ୍କ ନାମ",
+    "TOTAL_SCORE": "ମୋଟ ସ୍କୋର୍",
+    "PERCENTAGE": "ଶତକଡା",
+    "STUDENT_ANSWER": "ଛାତ୍ରଙ୍କ ଉତ୍ତର",
+    "AI_EXPLANATION_LABEL": "AI ବ୍ୟାଖ୍ୟା",
+    "NO_RESPONSE_AVAILABLE": "କୌଣସି ଉତ୍ତର ଉପଲବ୍ଧ ନାହିଁ",
+    "FILL_IN_THE_BLANKS": "ଖାଲିସ୍ଥାନ ପୂରଣ କରନ୍ତୁ",
+    "MULTIPLE_CHOICE_QUESTIONS": "ଏକାଧିକ ବିକଳ୍ପ ପ୍ରଶ୍ନ",
+    "SHORT_ANSWER_QUESTIONS": "ସଂକ୍ଷିପ୍ତ ଉତ୍ତର ପ୍ରଶ୍ନ",
+    "LONG_ANSWER_QUESTIONS": "ଲମ୍ବା ଉତ୍ତର ପ୍ରଶ୍ନ",
+    "UNKNOWN_SECTION": "ଅଜଣା ବିଭାଗ",
+    "GENERATED_ON": "{{date}} ରେ ସୃଷ୍ଟି ହୋଇଛି",
+    "PAGE_LABEL": "{{totalPages}} ମଧ୍ୟରୁ {{pageNumber}} ପୃଷ୍ଠା",
+    "TAKE_PHOTO": "ଫଟୋ ଉଠାନ୍ତୁ",
+    "LOADING_CAMERA": "କ୍ୟାମେରା ଲୋଡ୍ ହେଉଛି...",
+    "UPLOADING": "ଅପଲୋଡ୍ ହେଉଛି...",
+    "MAX_IMAGES": "ସର୍ବାଧିକ {{count}} ପ୍ରତିଛବି",
+    "TAKE_A_PHOTO": "ଗୋଟିଏ ଫଟୋ ଉଠାନ୍ତୁ",
+    "UPLOAD_A_PHOTO": "ଏକ ଫଟୋ ଅପଲୋଡ୍ କରନ୍ତୁ",
+    "SUBMITTING": "ଦାଖଲ କରାଯାଉଛି...",
+    "UPLOADING_FILES": "ଫାଇଲଗୁଡ଼ିକ ଅପଲୋଡ୍ ହେଉଛି...",
+    "SAVE_AND_UPLOAD": "ସେଭ୍ କରି ଅପଲୋଡ୍ କରନ୍ତୁ",
+    "UPLOAD_LIMIT_EXCEEDED": "ଆପଣ କେବଳ {{count}} ଟି ପର୍ଯ୍ୟନ୍ତ ଛବି ଅପଲୋଡ୍ କରିପାରିବେ।",
+    "INVALID_FILE_TYPE": "ଦୟାକରି ବୈଧ ଛବି ଫାଇଲ୍‌ଗୁଡ଼ିକ (jpg, jpeg) ଚୟନ କରନ୍ତୁ।",
+    "FILE_SIZE_EXCEEDED": "ଫାଇଲ୍ 5MB ସୀମା ଅତିକ୍ରମ କରିଛି। ଦୟାକରି ଏକ ଛୋଟ ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ।",
+    "IMAGES_UPLOADED_SUCCESS": "ପ୍ରତିଛବିଗୁଡିକ ସଫଳତାର ସହ ଅପଲୋଡ୍ ହୋଇଛି!",
+    "UPLOAD_GALLERY_FAILED": "ଗ୍ୟାଲେରୀରୁ ଛବିଗୁଡ଼ିକ ଅପଲୋଡ୍ କରିବାରେ ବିଫଳ ହେଲା। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "PHOTO_CAPTURED_SUCCESS": "ଫଟୋ କ୍ୟାପଚର୍‌ ଏବଂ ସଫଳତାର ସହ ଅପଲୋଡ୍‌ କରାଯାଇଛି!",
+    "CAMERA_UPLOAD_FAILED": "କ୍ୟାମେରାରୁ ଇମେଜ୍ ଅପଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "MISSING_REQUIRED_PARAMS": "ଆବଶ୍ୟକୀୟ ପାରାମିଟରଗୁଡ଼ିକ ମିଳୁନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "UPLOAD_ONE_IMAGE_FIRST": "ଦାଖଲ କରିବା ପୂର୍ବରୁ ଦୟାକରି ଅତି କମରେ ଗୋଟିଏ ଚିତ୍ର ଅପଲୋଡ୍ କରନ୍ତୁ।",
+    "ANSWER_SHEET_SUBMITTED": "ଉତ୍ତର ପତ୍ର ସଫଳତାର ସହ ଦାଖଲ ହୋଇଛି!",
+    "SUBMIT_ANSWER_SHEET_FAILED": "ଉତ୍ତର ପତ୍ର ଦାଖଲ କରିବାରେ ବିଫଳ ହେଲା। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "PAPER_LABEL": "କାଗଜ:",
+    "MAX_MARKS": "ସର୍ବାଧିକ ଚିହ୍ନ:",
+    "SECTION_LABEL": "ବିଭାଗ:",
+    "SECTION_MAX": "ସର୍ବାଧିକ ବିଭାଗ:",
+    "AWARDED": "ପୁରସ୍କୃତ:",
+    "OVERALL_AWARDED": "ମୋଟ ପୁରସ୍କୃତ:",
+    "MANUAL_ASSESSMENT_REPORT": "ମାନୁଆଲ୍ ମୂଲ୍ୟାଙ୍କନ ରିପୋର୍ଟ"
   },
   "USER_REGISTRATION": {
-    "SELECT_ALL": "ସମସ୍ତ ଚୟନ କରନ୍ତୁ",
-    "DESELECT_ALL": "ସମସ୍ତକୁ ଅଚୟନ କରନ୍ତୁ",
     "LEARNER_REGISTRATIONS": "ଶିକ୍ଷାର୍ଥୀ ପଞ୍ଜିକରଣ",
     "SEARCH_LEARNER": "ଶିକ୍ଷାର୍ଥୀ ଖୋଜନ୍ତୁ..",
     "TO_TAKE_ACTION_SELECT_LEARNER": "ପଦକ୍ଷେପ ନେବା ପାଇଁ, ଅତି କମରେ ଜଣେ ଶିକ୍ଷାର୍ଥୀଙ୍କୁ ଚୟନ କରନ୍ତୁ।",
@@ -1144,18 +1229,11 @@
     "MOVED_TO_BATCH": "ଏବଂ ବ୍ୟାଚକୁ ସ୍ଥାନାନ୍ତରିତ ହୋଇଗଲା",
     "OKAY": "ଠିକ୍ ଅଛି",
     "NOT_INTERESTED_TO_JOIN": "ଯୋଗଦେବାକୁ ଆଗ୍ରହୀ ନୁହେଁ",
-    "INTERESTED_MAY_JOIN_NEXT_YEAR": "ଆଗ୍ରହୀ, ଆସନ୍ତା ବର୍ଷ ଯୋଗ ଦେଇପାରିବେ"
+    "INTERESTED_MAY_JOIN_NEXT_YEAR": "ଆଗ୍ରହୀ, ଆସନ୍ତା ବର୍ଷ ଯୋଗ ଦେଇପାରିବେ",
+    "SELECT_ALL": "ସମସ୍ତ ଚୟନ କରନ୍ତୁ",
+    "DESELECT_ALL": "ସମସ୍ତକୁ ଅଚୟନ କରନ୍ତୁ",
+    "ASSESSMENT_SCORES": "ମୂଲ୍ୟାଙ୍କନ ସ୍କୋର୍"
   },
-  "MENTORS": {
-    "NEW_MENTOR": "ନୂତନ ପରାମର୍ଶଦାତା",
-    "FIRST_SELECT_REQUIRED_FIELDS": "ପ୍ରଥମେ ଆବଶ୍ୟକୀୟ କ୍ଷେତ୍ରଗୁଡ଼ିକୁ ଚୟନ କରନ୍ତୁ",
-    "MENTOR_CREATED_SUCCESSFULLY": "ମେଣ୍ଟର ସଫଳତାର ସହ ସୃଷ୍ଟି ହୋଇଛି!",
-    "USER_CREDENTIALS_WILL_BE_SEND_SOON": "ମେଣ୍ଟର ତିଆରି ହୋଇଛି, ଶୀଘ୍ର ପ୍ରମାଣପତ୍ର ପଠାଯିବ।",
-    "MENTOR_UPDATED_SUCCESSFULLY": "ମେଣ୍ଟରଙ୍କୁ ସଫଳତାର ସହ ଅପଡେଟ୍ କରାଯାଇଛି!",
-    "EDIT_MENTOR": "ପରାମର୍ଶଦାତା ସମ୍ପାଦନ କରନ୍ତୁ",
-    "NOT_ABLE_UPDATE_MENTOR": "ପରାମର୍ଶଦାତାଙ୍କୁ ଅପଡେଟ୍ କରିପାରିଲେ ନାହିଁ",
-    "NOT_ABLE_CREATE_MENTOR": "ପରାମର୍ଶଦାତା ସୃଷ୍ଟି କରିପାରିଲେ ନାହିଁ",
-    "UPDATE_MENTOR": "ପରାମର୍ଶଦାତାଙ୍କୁ ଅପଡେଟ୍ କରନ୍ତୁ",
-    "RE_ASSIGN_MENTOR": "ମେଣ୍ଟରଙ୍କୁ ପୁନଃନିଯୁକ୍ତ କରନ୍ତୁ"
-  }
+  "Select_Language_For_Learning": "ଆପଣ ଯେଉଁ ଭାଷାରେ ଶିଖିବାକୁ ଚାହୁଁଛନ୍ତି, ସେହି ଭାଷାକୁ ଚୟନ କରନ୍ତୁ।",
+  "Learning_Language_Info": "ବିଷୟବସ୍ତୁ, କୋର୍ସ ଏବଂ ମୂଲ୍ୟାୟନଗୁଡ଼ିକ ଆପଣ ଚୟନ କରିଥିବା ଭାଷାରେ ଦେଖାଯିବ। ଆପଣ ଏହି ଭାଷାକୁ ଯେକୌଣସି ସମୟରେ ପ୍ରୋଫାଇଲ ବିଭାଗରୁ ପରିବର୍ତ୍ତନ କରିପାରିବେ"
 }

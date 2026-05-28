@@ -153,9 +153,9 @@
     "NO_CONTENT_CREATOR_FOUND": "ସାମଗ୍ରୀ ସୃଷ୍ଟା (SCTA) ମିଳିଲେ ନାହିଁ",
     "NO_CONTENT_REVIEWER_FOUND": "ସାମଗ୍ରୀ ସମୀକ୍ଷକ (CCTA) ମିଳିଲେ ନାହିଁ",
     "LOADING": "ଲୋଡ୍ ହେଉଛି",
-    "USER_DELETE_SUCCSSFULLY": "ଉପଯୋଗକର୍ତ୍ତା ସଫଳତାର ସହିତ ବିଲୋପ କଲେ |",
     "SURE_REASSIGN_CENTER": "ଆପଣ ନିଶ୍ଚିତ କି ଏହି ଉପଭୋକ୍ତାଙ୍କୁ କେନ୍ଦ୍ର ପୁନର୍ନିୟୁକ୍ତ କରିବାକୁ ଚାହୁଁଛନ୍ତି?",
     "SORT": "ବିନ୍ୟାସ",
+    "USER_DELETE_SUCCSSFULLY": "ଉପଯୋଗକର୍ତ୍ତା ସଫଳତାର ସହିତ ବିଲୋପ କଲେ |",
     "ARE_YOU_SURE_DELETE_STATE": "ଏହି ରାଜ୍ୟରେ {{district}}ଟି ସକ୍ରିୟ ଜିଲ୍ଲା ଅଛି ଯାହାକୁ ଆପଣ ଡିଲିଟ୍ କରିପାରିବେ ନାହିଁ।",
     "ADD": "ଯୋଡନ୍ତୁ |",
     "SUBMIT_YOUR_REQUEST_FOR_ISSUES": "ଆପଣଙ୍କ ଅନୁରୋଧ ଦାଖଲ କରନ୍ତୁ ଏବଂ ଯେକୌଣସି ସମସ୍ୟା କିମ୍ବା ଚିନ୍ତାରେ ଆମକୁ ଆପଣଙ୍କୁ ସାହାଯ୍ୟ କରିବାକୁ ଦିଅନ୍ତୁ।",
@@ -169,7 +169,19 @@
     "MOVED_TO_DIFFERENT_ROLE": "ଏକ ଭିନ୍ନ ଭୂମିକାକୁ ସ୍ଥାନାନ୍ତରିତ ହୋଇଛି",
     "NO_MOBILIZER_FOUND": "କୌଣସି ପରାମର୍ଶଦାତା ମିଳିଲେ ନାହିଁ",
     "MAP": "ମ୍ୟାପ୍",
-    "NEXT": "ପରବର୍ତ୍ତୀ"
+    "NEXT": "ପରବର୍ତ୍ତୀ",
+    "REDIRECTING": "ପୁନଃନିର୍ଦ୍ଦେଶିତ ହେଉଛି...",
+    "SELECT_LANGUAGE": "ଭାଷା ଚୟନ କରନ୍ତୁ",
+    "GOOGLE_DOC_VIEWER": "ଗୁଗୁଲ୍ ଡକ୍ ଭ୍ୟୁଅର୍",
+    "SELECT_BATCHES_FOR": "{{name}} ପାଇଁ ବ୍ୟାଚଗୁଡ଼ିକୁ ଚୟନ କରନ୍ତୁ।",
+    "GO_BACK_WITHOUT_SAVING": "ଆପଣ କ’ଣ ନିଶ୍ଚିତ ଯେ ଆପଣ ସଞ୍ଚୟ ନକରି ଫେରିବାକୁ ଚାହୁଁଛନ୍ତି?",
+    "NO_CANCEL": "ନା, ବାତିଲ୍ କରନ୍ତୁ",
+    "YES_GO_BACK": "ହଁ, ଫେରି ଯାଆନ୍ତୁ",
+    "DO_ID_NOT_FOUND": "ପରିଚୟ ମିଳିଲା ନାହିଁ",
+    "USER_BATCHES": "{{name}} ନିମ୍ନଲିଖିତ ବ୍ୟାଚଗୁଡ଼ିକର ଅଟେ।",
+    "DELETE_FROM_BATCH_WARNING": "ଆପଣ ଉପରୋକ୍ତ କେନ୍ଦ୍ରର ବ୍ୟାଚଗୁଡ଼ିକରୁ ଉପଯୋଗକର୍ତ୍ତାଙ୍କୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?",
+    "SAVING": "ସଞ୍ଚୟ କରୁଛି...",
+    "MAP_NEW": "ନୂତନ ମ୍ୟାପ୍"
   },
   "LOGIN_PAGE": {
     "USERNAME": "ଉପଭୋକ୍ତା ନାମ",
@@ -208,7 +220,8 @@
     "CURRENT_PASSWORD_NOT": "ବର୍ତ୍ତମାନର ପାସୱାର୍ଡ ମେଳ ଖାଉନାହିଁ",
     "NO_USERNAME": "ବ୍ୟବହାରକାରୀନାମ ମିଳିଲା ନାହିଁ",
     "PASSWORD_SAME_AS_OLD": "ପାସୱାର୍ଡ ପୁରୁଣା ପାସୱାର୍ଡ ପରି ସମାନ ଅଛି",
-    "YOU_DONT_HAVE_APPROPRIATE_PRIVILEGES_TO_ACCESS": "ଏହି ଆପକୁ ଆକ୍ସେସ୍ କରିବା ପାଇଁ ଆପଣଙ୍କ ପାଖରେ ଉପଯୁକ୍ତ ଅଧିକାର ନାହିଁ।"
+    "YOU_DONT_HAVE_APPROPRIATE_PRIVILEGES_TO_ACCESS": "ଏହି ଆପକୁ ଆକ୍ସେସ୍ କରିବା ପାଇଁ ଆପଣଙ୍କ ପାଖରେ ଉପଯୁକ୍ତ ଅଧିକାର ନାହିଁ।",
+    "SET_PASSWORD": "ପାସୱାର୍ଡ ସେଟ୍ କରନ୍ତୁ"
   },
   "SIDEBAR": {
     "HI": "ନମସ୍କାର",
@@ -362,7 +375,10 @@
     "CSV_TEMPLATE": "CSV ଟେମ୍ପଲେଟ୍",
     "NEW_TOPIC": "ନୂତନ ବିଷୟ",
     "DOWNLOAD_CSV": "ଅପଲୋଡ୍ କରାଯାଇଥିବା CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
-    "DURING_COURSE": "ଶିଖନ୍ତୁ"
+    "DURING_COURSE": "ଶିଖନ୍ତୁ",
+    "OPTION_1": "ବିକଳ୍ପ 1",
+    "OPTION_2": "ବିକଳ୍ପ 2",
+    "OPTION_3": "ବିକଳ୍ପ 3"
   },
   "MASTER": {
     "STATE": "ରାଜ୍ୟ",
@@ -518,7 +534,7 @@
     "EDUCATIONAL_INSTITUTE": "ଶିକ୍ଷାନୁଷ୍ଠାନ",
     "UNEMPLOYED_OR_DOMESTIC_WORK": "ବେରୋଜଗାର କିମ୍ବା ଘରୋଇ କାମ",
     "SELF_PLACED": "ସ୍ୱୟଂ ନିୟୁକ୍ତ",
-    "TRANSGENDER": "ଟ୍ରାନ୍ସଜେଣ୍ଡର୍",
+    "TRANSGENDER": "ଅନ୍ୟ",
     "HINDI": "ହିନ୍ଦୀ",
     "MARATHI": "ମରାଠୀ",
     "URDU": "ଉର୍ଦ୍ଦୁ",
@@ -531,6 +547,7 @@
     "BOARD": "ବର୍ଡ",
     "MEDIUM": "ମାଧ୍ୟମ",
     "GRADE": "ଗ୍ରେଡ୍",
+    "CONTACT": "ଯୋଗାଯୋଗ",
     "USERNAME": "ଉପଯୋଗକର୍ତ୍ତାନାମ",
     "DESCRIPTION": "ବର୍ଣ୍ଣନା",
     "PROGRAM_NAME": "ପ୍ରୋଗ୍ରାମର ନାମ",
@@ -538,7 +555,6 @@
     "PROGRAM_TYPE": "ପ୍ରୋଗ୍ରାମ ପ୍ରକାର",
     "PROGRAM_HEAD_NAME": "ପ୍ରୋଗ୍ରାମ ମୁଖ୍ୟ ନାମ",
     "PROGRAM_IMAGE": "ପ୍ରୋଗ୍ରାମ ପ୍ରତିଛବି",
-    "CONTACT": "ଯୋଗାଯୋଗ",
     "BATCH": "ବ୍ୟାଚ୍",
     "PREFERRED_LANGUAGE": "ପସନ୍ଦର ଭାଷା",
     "FIRST_NAME": "ପ୍ରଥମ ନାମ",
@@ -552,7 +568,10 @@
     "CONFIRM_TO_ACTIVATE": "ଆପଣ କ’ଣ ନିଶ୍ଚିତ ଯେ ଆପଣ ଏହି ଉପଯୋଗକର୍ତ୍ତାଙ୍କୁ ପୁଣି ସକ୍ରିୟ କରିବାକୁ ଚାହୁଁଛନ୍ତି?",
     "WORKING_LOCATION": "କାର୍ଯ୍ୟସ୍ଥଳୀ ଲୋକେସନ୍",
     "CATCHMENT_AREA": "ଜଳାଭଙ୍ଗ ଅଞ୍ଚଳ",
-    "TYPE_OF_BATCH": "ବ୍ୟାଚର ପ୍ରକାର"
+    "TYPE_OF_BATCH": "ବ୍ୟାଚର ପ୍ରକାର",
+    "BELONG_TO_MULTIPLE_CENTERS": "ନିମ୍ନଲିଖିତ କେନ୍ଦ୍ରଗୁଡ଼ିକର ଅନ୍ତର୍ଭୁକ୍ତ",
+    "DO_YOU_WANT_TO_DELETE_MULTIPLE_CENTERS": "ଆପଣ କ’ଣ ସମସ୍ତ କେନ୍ଦ୍ରରୁ ଉପଭୋକ୍ତାଙ୍କୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି?",
+    "DO_YOU_WANT_TO_DELETE_FROM_LOCATION": "ଆପଣ ଏହି ସ୍ଥାନରୁ ଉପଯୋଗକର୍ତ୍ତାଙ୍କୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?"
   },
   "FORM_ERROR_MESSAGES": {
     "INVALID_INPUT": "ଅବୈଧ ଇନପୁଟ୍।",
@@ -669,7 +688,9 @@
     "UPDATE_TEMPLATE": "ଟେମ୍ପ୍ଲେଟ୍ ଅପଡେଟ୍ କରନ୍ତୁ",
     "DELETE_TEMPLATE_ALERT": "ଆପଣ ନିଶ୍ଚିତ କି ଏହି ଟେମ୍ପ୍ଲେଟ୍ ଅପସାରଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି?",
     "TEMPLATE_DELETED_SUCCESS": "{{templateId}} ଟେମ୍ପ୍ଲେଟ୍ ସଫଳଭାବରେ ଅପସାରଣ ହେଲା",
-    "Add_TEMPLATE": "ନୂତନ ଟେମ୍ପ୍ଲେଟ୍ ଯୋଗ କରନ୍ତୁ"
+    "Add_TEMPLATE": "ନୂତନ ଟେମ୍ପ୍ଲେଟ୍ ଯୋଗ କରନ୍ତୁ",
+    "ERROR_DELETING_TEMPLATE": "ଟେମ୍ପଲେଟ୍ ଡିଲିଟ୍ କରିବାରେ ତ୍ରୁଟି",
+    "ERROR_LOADING_DATA": "ଡାଟା ଲୋଡ୍ କରିବା ସମୟରେ ତ୍ରୁଟି।"
   },
   "CERTIFICATES": {
     "SEARCHBAR_PLACEHOLDER": "ଖୋଜନ୍ତୁ...",
@@ -874,6 +895,10 @@
     "WORKING_LOCATION_REQUIRED_MISSING_VILLAGES": "କାର୍ଯ୍ୟ ସ୍ଥାନ ଆବଶ୍ୟକ। ଦୟାକରି ସମସ୍ତ ବ୍ଲକ ପାଇଁ ଗ୍ରାମ ଚୟନ କରନ୍ତୁ। {{ବ୍ଲକ}} ଏବଂ {{ଗଣନା}} ଅଧିକ ବ୍ଲକରେ ଗ୍ରାମ ନାହିଁ।",
     "WORKING_LOCATION_REQUIRED_MISSING_VILLAGES_SINGLE": "କାର୍ଯ୍ୟ ସ୍ଥାନ ଆବଶ୍ୟକ। ଦୟାକରି ସମସ୍ତ ବ୍ଲକ ପାଇଁ ଗ୍ରାମ ଚୟନ କରନ୍ତୁ। {{ବ୍ଲକ}} ରେ ଗ୍ରାମ ନାହିଁ।",
     "WORKING_LOCATION_REQUIRED_AT_LEAST_ONE": "କାର୍ଯ୍ୟସ୍ଥଳ ଆବଶ୍ୟକ। ଦୟାକରି ସମସ୍ତ ବ୍ଲକରୁ ଅତି କମରେ ଗୋଟିଏ ଗ୍ରାମ ଚୟନ କରନ୍ତୁ।",
-    "MOBILIZER_NAME": "ପରାମର୍ଶଦାତାଙ୍କ ନାମ"
-  }
+    "MOBILIZER_NAME": "ପରାମର୍ଶଦାତାଙ୍କ ନାମ",
+    "EDIT_MOBILIZER": "ମୋବିଲାଇଜର୍‌କୁ ଏଡିଟ୍ କରନ୍ତୁ"
+  },
+  "WELCOME_TO_YOUR_DASHBOARD": "ଆପଣଙ୍କର ଡ୍ୟାସବୋର୍ଡକୁ ସ୍ୱାଗତ",
+  "Select_Language_For_Learning": "ଆପଣ ଯେଉଁ ଭାଷାରେ ଶିଖିବାକୁ ଚାହୁଁଛନ୍ତି, ସେହି ଭାଷାକୁ ଚୟନ କରନ୍ତୁ।",
+  "Learning_Language_Info": "ବିଷୟବସ୍ତୁ, କୋର୍ସ ଏବଂ ମୂଲ୍ୟାୟନଗୁଡ଼ିକ ଆପଣ ଚୟନ କରିଥିବା ଭାଷାରେ ଦେଖାଯିବ। ଆପଣ ଏହି ଭାଷାକୁ ଯେକୌଣସି ସମୟରେ ପ୍ରୋଫାଇଲ ବିଭାଗରୁ ପରିବର୍ତ୍ତନ କରିପାରିବେ"
 }
